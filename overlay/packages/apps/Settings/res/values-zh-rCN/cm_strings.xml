@@ -65,6 +65,9 @@
      <string name="profile_unknown_nfc_tag">未知情景</string>
      <string name="profile_add_nfc_text">此 NFC 标签是与一个未知的情景相连的。把此 NFC 标签连接到一个现有的情景将会允许您以后选择这个情景。</string>
      <string name="profile_select">选择情景</string>
+    <string name="profile_remove_dialog_message">移除情景模式 %1$s?</string>
+    <string name="profile_populate_profile_from_state">确认使用现有设备的情景模式?</string>
+    <string name="profile_menu_fill_from_state">导入当前的设备设置</string>
 
     <!-- Add Profile -->
     <string name="add_profile_dialog_title">创建新的情景模式</string>
@@ -205,6 +208,21 @@
     <string name="backlight_summary_disabled">禁用</string>
     <string name="backlight_summary_enabled_with_timeout">背光时间<xliff:g id="timeout">%s</xliff:g></string>
     <string name="backlight_summary_enabled">启用</string>
+
+    <!-- Power menu -->
+    <string name="power_menu_title">电源菜单</string>
+    <string name="power_menu_power_title">关机</string>
+    <string name="power_menu_reboot_title">重启菜单</string>
+    <string name="power_menu_screenshot_title">屏幕截图</string>
+    <string name="power_menu_profiles_title">情景模式</string>
+    <string name="power_menu_airplane_title">飞行模式</string>
+    <string name="power_menu_users_title">用户切换</string>
+    <string name="power_menu_settings_title">Settings shortcut</string>
+    <string name="power_menu_lockdown_title">Device lockdown</string>
+    <string name="power_menu_bug_report_title">Bug报告</string>
+    <string name="power_menu_sound_title">声音调节面板</string>
+    <string name="power_menu_bug_report_disabled">仅当开启开发者模式时可以启用</string>
+    <string name="power_menu_profiles_disabled">System profiles are disabled</string>
 
     <!-- Backlight brightness settings screen -->
     <string name="adaptive_backlight_title">自适应背光</string>
@@ -602,6 +620,8 @@
      <string name="profile_tabs_bluetooth">蓝牙</string>
      <string name="profile_tabs_nfc">NFC</string>
 
+    <string name="profile_triggers_header">添加触发条件</string>
+
      <string name="profile_setup_setup_triggers_title">步骤 1：添加触发器</string>
      <string name="profile_setup_setup_triggers_title_config">修改触发器：<xliff:g id="profile_name">%1$s</xliff:g></string>
 
@@ -610,6 +630,8 @@
 
      <string name="no_bluetooth_triggers">无可用的蓝牙触发器</string>
      <string name="no_wifi_triggers">没有可用的 Wi\u2011Fi 触发器</string>
+    <string name="no_triggers_configured">没有配置触发器。点击添加更多。</string>
+    <string name="no_triggers_configured_nfc">点击添加新的NFC触发器</string>
 
      <string name="profile_setup_setup_triggers_description">请选择将激活此配置文件的触发器</string>
      <string name="profile_setup_actions_description">现在配置当配置文件激活时，将发生的操作</string>
@@ -748,6 +770,10 @@
     <string name="uicc_mount" product="default">挂载UICC存储</string>
     <string name="uicc_mount_summary" product="default"></string>
     <string name="uicc_insert_summary" product="default">插入UICC存储以挂载</string>
+    <!-- Title of dialog asking user to confirm before enabling UMS. [CHAR LIMIT=48] -->
+    <string name="usb_settings_enable_ums_title">开启USB存储模式?</string>
+    <!-- Message of dialog asking user to confirm before enabling UMS. [CHAR LIMIT=NONE] -->
+    <string name="usb_settings_enable_ums_message">打开usb存储模式可能会造成部分软件暂时无法使用，建议使用mtp模式。</string>
 
     <string name="dlg_confirm_usb_unmount_title" product="default">卸载USB存储?</string>
     <string name="dlg_confirm_uicc_unmount_title" product="default">卸载UICC存储?</string>
@@ -906,4 +932,14 @@
     <string name="edge_gesture_service_title">拦截手势触摸事件</string>
     <string name="edge_gesture_service_summary">不向应用发送导航栏和状态栏的触摸事件</string>
 
+    <!-- CM Legal -->
+    <string name="cmlicense_title">CyanogenMod Legal</string>
+    <string name="settings_cmlicense_activity_title">CyanogenMod Legal</string>
+    <string name="settings_cmlicense_activity_unreachable">You don\'t have a data connection. To view this information now, go to %s from any computer connected to the Internet.</string>
+
+    <!-- Screen security -->
+    <string name="unlock_quick_unlock_control_title">快速解锁</string>
+    <string name="unlock_quick_unlock_control_summary">当输入正确的 PIN 码或密码后自动解锁</string>
+    <string name="unlock_scramble_pin_layout_title">乱序布局</string>
+    <string name="unlock_scramble_pin_layout_summary">当解锁设备时使用乱序 PIN 布局</string>
 </resources>
