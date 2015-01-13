@@ -43,6 +43,7 @@
     <!-- label for item that opens the profile choosing dialog -->
     <string name="global_action_choose_profile">情景模式</string>
 
+    <string name="global_action_screenshot">屏幕截图</string>
 
     <!-- Title of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permgrouplab_security">安全</string>
@@ -69,6 +70,11 @@
     <string name="permlab_useHardwareFramework">使用硬件框架</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permdesc_useHardwareFramework">允许应用访问 CM 硬件框架。</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want the application to do this. -->
+    <string name="permlab_setKeyguardWallpaper">设置自动键盘锁壁纸</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_setKeyguardWallpaper">允许软件修改锁屏壁纸.</string>
 
     <string name="privacy_guard_dialog_title">隐私防护</string>
     <string name="privacy_guard_dialog_summary"><xliff:g id="app">%1$s</xliff:g> 希望 <xliff:g id="op">%2$s</xliff:g>。</string>
@@ -108,4 +114,109 @@
     <string name="adb_both_active_notification_title">USB 和网络 ADB 调试已启用</string>
     <!-- ADB notification message-->
     <string name="adb_active_generic_notification_message">触摸以禁用调试。</string>
+
+    <!-- App ops requests -->
+    <string name="app_ops_access_camera">获取相机使用权</string>
+    <string name="app_ops_access_location">获取位置信息</string>
+    <string name="app_ops_access_notifications">读取短信</string>
+    <string name="app_ops_activate_vpn">激活VPN</string>
+    <string name="app_ops_alarm_wakeup">唤醒设备</string>
+    <string name="app_ops_su">获取Root权限</string>
+    <string name="app_ops_auto_start">开机自启</string>
+    <string name="app_ops_delete_call_log">删除通话记录</string>
+    <string name="app_ops_delete_contacts">删除联系人</string>
+    <string name="app_ops_delete_mms">删除彩信</string>
+    <string name="app_ops_delete_sms">删除短信</string>
+    <string name="app_ops_draw_on_top">draw windows on top</string>
+    <string name="app_ops_get_usage_stats">获取软件使用情况</string>
+    <string name="app_ops_keep_device_awake">保持设备唤醒</string>
+    <string name="app_ops_make_phone_call">打电话</string>
+    <string name="app_ops_modify_calendar">更新日历</string>
+    <string name="app_ops_modify_call_log">更新通话记录</string>
+    <string name="app_ops_modify_clipboard">修改剪切板</string>
+    <string name="app_ops_modify_contacts">更新联系人</string>
+    <string name="app_ops_modify_settings">更新系统设置</string>
+    <string name="app_ops_mute_unmute_microphone">开启/关闭麦克风静音</string>
+    <string name="app_ops_play_audio">播放音频</string>
+    <string name="app_ops_post_notification">发送信息</string>
+    <string name="app_ops_project_media">媒体项目</string>
+    <string name="app_ops_read_calendar">读取日历</string>
+    <string name="app_ops_read_call_log">读取通话记录</string>
+    <string name="app_ops_read_clipboard">读取剪切板</string>
+    <string name="app_ops_read_contacts">读取联系人</string>
+    <string name="app_ops_read_mms">读取彩信</string>
+    <string name="app_ops_read_sms">读取短信</string>
+    <string name="app_ops_receive_sms">接收短信</string>
+    <string name="app_ops_record_audio">录音</string>
+    <string name="app_ops_send_mms">发送彩信</string>
+    <string name="app_ops_send_sms">发送短信</string>
+    <string name="app_ops_start_at_bootup">开机自启</string>
+    <string name="app_ops_toast_window">显示土司提示</string>
+    <string name="app_ops_toggle_bluetooth">切换蓝牙</string>
+    <string name="app_ops_toggle_mobile_data">切换移动数据</string>
+    <string name="app_ops_toggle_nfc">切换NFC</string>
+    <string name="app_ops_toggle_wifi">t切换WiFi</string>
+    <string name="app_ops_use_alarm_volume">调节闹钟音量/string>
+    <string name="app_ops_use_audio_focus">control the audio focus</string>
+    <string name="app_ops_use_bluetooth_volume">control the Bluetooth volume</string>
+    <string name="app_ops_use_master_volume">control the master volume</string>
+    <string name="app_ops_use_media_buttons">使用媒体按键</string>
+    <string name="app_ops_use_media_volume">调节媒体音量</string>
+    <string name="app_ops_use_notification_volume">control the notification volume</string>
+    <string name="app_ops_use_ring_volume">调节铃声音量</string>
+    <string name="app_ops_use_vibrate">使用触摸反馈</string>
+    <string name="app_ops_use_voice_volume">control the voice call volume</string>
+    <string name="app_ops_write_mms">写彩信</string>
+    <string name="app_ops_write_sms">写短信</string>
+
+    <!-- Shown in the lock screen when there is SIM card IO error. -->
+    <string name="lockscreen_sim_error_message_short">无效卡。</string>
+
+    <!-- Shown in the lock screen to tell the user that phone is in airplane mode-->
+    <string name="lockscreen_airplane_mode_on">飞行模式</string>
+
+    <!-- USB_PREFERENCES: Notification for when the user connects the phone to a computer via USB in CHARGING mode.  This is the title -->
+    <string name="usb_charging_notification_title">连接充电模式</string>
+
+    <!-- Shown when the device is tethered -->
+    <string name="tethered_notification_no_device_message">没有连接设备</string>
+    <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> connected device</string>
+    <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> connected devices</string>
+
+    <!-- Text for progress dialog while formatting SD card [CHAR LIMIT=NONE] -->
+    <string name="progress_nomediapresent" product="default">No removable media present\u2026</string>
+
+    <!-- Storage description for UICC storage. [CHAR LIMIT=NONE] -->
+    <string name="storage_uicc">UICC存储</string>
+
+    <!-- Displayed when the USSD/SS request is modified by STK CC to a
+    different request. This will be displayed in a toast. -->
+    <string name="stk_cc_ussd_to_dial">USSD请求被修改为DIAL请求。</string>
+    <string name="stk_cc_ussd_to_ss">USSD请求被修改为SS请求。</string>
+    <string name="stk_cc_ussd_to_ussd">USSD请求被修改为新的UUSD请求。</string>
+    <string name="stk_cc_ss_to_dial">SS请求被修改为DIAL请求。</string>
+    <string name="stk_cc_ss_to_ussd">SS请求被修改为UUSD请求。</string>
+    <string name="stk_cc_ss_to_ss">SS请求被修改为新的SS请求。</string>
+
+    <!-- Carrier Name -->
+    <string name="China_Mobile">中国移动</string>
+    <string name="China_Unicom">中国联通</string>
+    <string name="China_Telecom">中国电信</string>
+
+    <!-- Text of the checkbox for the permission confirmation dialog to remember the user's choice. [CHAR LIMIT=40] -->
+    <string name="permission_remember_choice">记住</string>
+    <string name="permission">权限</string>
+
+    <!-- Default wi-fi hotspot ssid -->
+    <string name="def_wifi_wifihotspot_ssid" translatable="false"></string>
+    <!-- Default wi-fi hotspot pass -->
+    <string name="def_wifi_wifihotspot_pass" translatable="false"></string>
+    <!-- Default wi-fi direct name -->
+    <string name="def_wifi_direct_name" translatable="false"></string>
+
+    <!-- Performance profile modes -->
+    <string name="perf_profile_pwrsv">省电模式</string>
+    <string name="perf_profile_bal">平衡模式</string>
+    <string name="perf_profile_perf">性能模式</string>
+
 </resources>

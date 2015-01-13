@@ -106,7 +106,7 @@
     <string name="incall_vibrate_45_summary">通话中每隔45s振动一次</string>
 
     <string name="detailed_incall_info_title">来电详细信息</string>
-    <string name="detailed_incall_info_summary">Display additional information about the caller in the incoming call screen</string>
+    <string name="detailed_incall_info_summary">在屏幕显示来电者的附加信息</string>
 
     <string name="video_call">视频通话</string>
     <string name="call_duration_active">接通时间:</string>
@@ -121,5 +121,5 @@
     <string name="msim_ime_dialog_title">设备标识符</string>
 
     <!-- Filter by blacklist calls option -->
-    <string name="call_log_blacklist_header">仅黑名单通话</string>
+    <string name="call_log_blacklist_header">只显示黑名单通话</string>
 </resources>
