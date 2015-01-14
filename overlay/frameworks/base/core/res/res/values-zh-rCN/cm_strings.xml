@@ -155,17 +155,17 @@
     <string name="app_ops_toggle_bluetooth">切换蓝牙</string>
     <string name="app_ops_toggle_mobile_data">切换移动数据</string>
     <string name="app_ops_toggle_nfc">切换NFC</string>
-    <string name="app_ops_toggle_wifi">t切换WiFi</string>
+    <string name="app_ops_toggle_wifi">切换WiFi</string>
     <string name="app_ops_use_alarm_volume">调节闹钟音量</string>
-    <string name="app_ops_use_audio_focus">control the audio focus</string>
-    <string name="app_ops_use_bluetooth_volume">control the Bluetooth volume</string>
-    <string name="app_ops_use_master_volume">control the master volume</string>
+    <string name="app_ops_use_audio_focus">调节音频焦点</string>
+    <string name="app_ops_use_bluetooth_volume">调节蓝牙音量</string>
+    <string name="app_ops_use_master_volume">调节主音量</string>
     <string name="app_ops_use_media_buttons">使用媒体按键</string>
     <string name="app_ops_use_media_volume">调节媒体音量</string>
-    <string name="app_ops_use_notification_volume">control the notification volume</string>
+    <string name="app_ops_use_notification_volume">调节通知音量</string>
     <string name="app_ops_use_ring_volume">调节铃声音量</string>
     <string name="app_ops_use_vibrate">使用触摸反馈</string>
-    <string name="app_ops_use_voice_volume">control the voice call volume</string>
+    <string name="app_ops_use_voice_volume">调节语音通话音量</string>
     <string name="app_ops_write_mms">写彩信</string>
     <string name="app_ops_write_sms">写短信</string>
 
@@ -180,11 +180,11 @@
 
     <!-- Shown when the device is tethered -->
     <string name="tethered_notification_no_device_message">没有连接设备</string>
-    <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> connected device</string>
-    <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> connected devices</string>
+    <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> 台设备已连接</string>
+    <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> 台设备已连接</string>
 
     <!-- Text for progress dialog while formatting SD card [CHAR LIMIT=NONE] -->
-    <string name="progress_nomediapresent" product="default">No removable media present\u2026</string>
+    <string name="progress_nomediapresent" product="default">目前没有可移动媒体设备 \u2026</string>
 
     <!-- Storage description for UICC storage. [CHAR LIMIT=NONE] -->
     <string name="storage_uicc">UICC存储</string>
