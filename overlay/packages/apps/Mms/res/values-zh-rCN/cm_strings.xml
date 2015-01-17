@@ -62,6 +62,16 @@
     <string name="alert_dialog_yes">是</string>
     <string name="alert_dialog_no">否</string>
 
+    <!-- Context menu item on a message for marking as unread -->
+    <string name="menu_as_unread">标记未读</string>
+    <!-- Context menu item on a message for marking all threads as unread -->
+    <string name="menu_all_as_unread">标记所有未读</string>
+    <!-- Confirm Mark as unread -->
+    <string name="confirm_mark_unread_dialog_title">标记为未读?</string>
+    <string name="confirm_mark_unread_conversation">信息将被标记为未读。</string>
+    <!-- Mark all threads confirmation dialog message -->
+    <string name="confirm_mark_unread_all_conversations">所有信息将标记为未读。</string>
+
     <!-- Multi recipients -->
     <string name="loading">请稍等\u2026</string>
     <string name="select_recipients">选择收件人</string>
@@ -338,9 +348,9 @@
 
     <plurals name="confirm_delete_messages">
         <!-- Case of 1 result. -->
-        <item quantity="one">一条短信将会被删除</item>
+        <item quantity="one">一条短信将会被删除。</item>
         <!-- Case of 0 or 2 or more results. -->
-        <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> messages will be deleted.</item>
+        <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> 条短信将被删除。</item>
     </plurals>
 
     <string name="import_sms_title">导入短信</string>
@@ -350,6 +360,8 @@
     <string name="delete_sms_toast">短信备份删除成功</string>
     <string name="import_sms_toast">短信导入成功</string>
     <string name="export_sms_toast">短信导出成功</string>
+    <string name="export_sms_failed_toast">不能导出短信</string>
+    <string name="import_sms_failed_toast">不能导入短信</string>
     <string name="perform_backup_title">正在备份...</string>
     <string name="perform_restore_title">正在还原...</string>
     <string name="wait_progress_message">请稍等...</string>
@@ -360,4 +372,15 @@
 
     <!-- Sharing vcs files from Calendar -->
     <string name="type_vcal">vCal</string>
+
+    <string name="menu_delete_cm">删除条目</string>
+
+    <!-- QuickMessage Wear-->
+    <string name="qm_wear_sending_message">回复给<xliff:g id="name">%s</xliff:g></string>
+    <string name="qm_wear_messaged_failed">你发送给<xliff:g id="name">%s</xliff:g>的信息发送失败,请重试。</string>
+    <string name="qm_wear_voice_reply">你对此有何回应？</string>
+    <string name="qm_wear_reply_by_voice">使用语音回复</string>
+
+    <!-- Copy message text-->
+    <string name="copy_empty_string">没有文字复制</string>
 </resources>
