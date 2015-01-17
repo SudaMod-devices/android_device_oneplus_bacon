@@ -23,4 +23,8 @@
         <item quantity="one">一次</item>
         <item quantity="other">%d次</item>
     </plurals>
+    <plurals name="qs_tiles_summary">
+        <item quantity="one">1 个磁贴已配置</item>
+        <item quantity="other">%d 个磁贴已配置</item>
+    </plurals>
 </resources>
