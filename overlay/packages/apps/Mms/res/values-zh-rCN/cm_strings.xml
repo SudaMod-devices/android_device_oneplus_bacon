@@ -27,6 +27,7 @@
 
     <!-- QM - Quick reply -->
     <string name="qm_quick_reply">快速回复</string>
+    <string name="qm_mark_read">查看</string>
 
     <!-- Delay delivery -->
     <string name="pref_title_send_delay">延迟发送短信</string>

@@ -94,7 +94,9 @@
     <!-- Profile network mode -->
      <string name="profile_networkmode_2g">2G</string>
      <string name="profile_networkmode_3g">3G</string>
+    <string name="profile_networkmode_4g">4G</string>
      <string name="profile_networkmode_2g3g">2G/3G</string>
+    <string name="profile_networkmode_2g3g4g">2G/3G/4G</string>
 
     <!-- Profile Config screen PreferenceGroup titles -->
      <string name="profile_connectionoverrides_title">连接覆盖</string>
@@ -159,6 +161,7 @@
      <string name="toggleData">移动数据</string>
      <string name="toggleSync">自动同步数据</string>
      <string name="toggle2g3g">2G/3G</string>
+    <string name="toggle2g3g4g">2G/3G/4G</string>
      <string name="toggleWimax">WiMAX</string>
      <string name="toggleNfc">NFC</string>
 
@@ -309,8 +312,9 @@
      <string name="block_notifications_summary">管理被忽略的通知和过滤器</string>
      <string name="no_filters_title">没有设置过滤器。若要过滤通知，请长按它并选择“忽略像这样的消息”。</string>
 
-    <!-- About phone screen, build date -->
     <string name="model_name">手机型号</string>
+
+    <!-- About phone screen, build date -->
     <string name="build_date">编译日期</string>
     <string name="build_date_default">2014-01-01-0000</string>
 
@@ -406,8 +410,6 @@
     <string name="status_bar_title">状态栏</string>
     <string name="status_bar_toggle_brightness">亮度控制</string>
     <string name="status_bar_toggle_brightness_summary">由滑过状态栏调整亮度</string>
-    <string name="status_bar_quick_qs_pulldown_title">快捷下拉</string>
-    <string name="status_bar_quick_qs_pulldown_summary">开启状态栏右侧快捷下拉</string>
     <string name="status_bar_notif_count_title">显示通知数量</string>
     <string name="status_bar_notif_count_summary">显示未读通知的数量</string>
 
@@ -420,8 +422,7 @@
     <string name="status_bar_battery_style_hidden">隐藏</string>
 
     <!-- Status bar - Battery percentage -->
-    <string name="status_bar_battery_percentage_title">显示电量百分比</string>
-    <string name="status_bar_battery_percentage_dialog_title">电量百分比</string>
+    <string name="status_bar_battery_percentage_title">电量百分比</string>
     <string name="status_bar_battery_percentage_default">隐藏(默认)</string>
     <string name="status_bar_battery_percentage_text_inside">嵌入电量图标</string>
     <string name="status_bar_battery_percentage_text_next">置于电量图标右侧</string>
@@ -471,6 +472,10 @@
     <!-- Whether to display IME switcher notifcation -->
      <string name="ime_switcher_notify">选择器通知</string>
      <string name="ime_switcher_notify_summary">显示输入法选择器通知</string>
+
+    <!-- High touch sensitivity -->
+    <string name="high_touch_sensitivity_title">手套模式</string>
+    <string name="high_touch_sensitivity_summary">提高触摸屏灵敏度，因此佩戴手套时可以操作手机</string>
 
     <!-- App ops -->
      <string name="app_ops_summaries_coarse_location">粗略位置</string>
@@ -853,10 +858,6 @@
     <string name="stats_collection_title">数据采集</string>
     <string name="stats_collection_summary">当允许时，我们将进行数据采集</string>
 
-    <!-- Weather in status bar -->
-    <string name="status_bar_show_weather_title">显示天气</string>
-    <string name="status_bar_show_weather_summary">通知栏顶部显示天气</string>
-
     <!-- Category title for Charging sounds (Power state change) specific Settings.
          [CHAR LIMIT=40] -->
     <string name="power_notifications_category_title">插入/拔出电源提示音</string>
@@ -948,7 +949,18 @@
 
     <!-- Notification drawer -->
     <string name="notification_drawer_title">下拉面板</string>
+
+    <string name="status_bar_quick_qs_pulldown_title">快捷下拉</string>
+    <string name="status_bar_quick_qs_pulldown_summary">开启状态栏右侧快捷下拉</string>
+
+    <!-- Weather in status bar -->
+    <string name="status_bar_show_weather_title">显示天气</string>
+    <string name="status_bar_show_weather_summary">通知栏顶部显示天气</string>
+
     <string name="qs_category_title">快捷设置</string>
+
+    <string name="qs_brightness_slider_title">显示亮度调节</string>
+
     <string name="qs_order_title">长按进行选择排序</string>
     <string name="add_qs">增加新磁贴</string>
     <string name="cast_screen">投影屏幕</string>
@@ -956,13 +968,32 @@
     <string name="qs_action_delete">删除</string>
     <string name="qs_action_add">添加</string>
     <string name="qs_action_no_more_tiles">不能再添加更多磁贴了</string>
+
     <string name="qs_main_tiles_title">放大第一行</string>
     <string name="qs_main_tiles_summary_on">第一行显示两个主要磁贴</string>
     <string name="qs_main_tiles_summary_off">三个一行</string>
+
     <string name="qs_advanced_location_title">定位选项快捷设置</string>
     <string name="qs_advanced_location_summary">能够对定位进行快捷设置</string>
 
     <!-- Themes Settings -->
     <!-- Settings main menu entry -->
     <string name="themes_settings_title">主题</string>
+
+    <!-- WiFi Ad-Hoc mode -->
+    <string name="wifi_mode">模式</string>
+    <string name="wifi_mode_ibss">Ad-Hoc (IBSS) Network</string>
+    <string name="wifi_mode_ibss_short">Ad-Hoc</string>
+
+    <string name="wifi_ibss_freq_title">Channel / Frequency</string>
+    <string name="wifi_channel">Channel</string>
+    <string name="wifi_mhz">MHz</string>
+
+    <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
+    <string name="regulatory_information_dialog_title">@string/regulatory_information</string>
+
+    <!-- SAR information -->
+    <string name="maximum_head_level">头部: %1$s W/kg</string>
+    <string name="maximum_body_level">整机: %1$s W/kg</string>
+
 </resources>
