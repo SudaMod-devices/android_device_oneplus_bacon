@@ -384,4 +384,17 @@
 
     <!-- Copy message text-->
     <string name="copy_empty_string">没有文字复制</string>
+	
+    <!-- Confirm Mark As Unread -->
+    <string name="confirm_mark_unread_dialog_title">标记为未读?</string>
+    <plurals name="confirm_mark_unread_conversation">
+    <!-- Case of 1 result. -->
+    <item quantity="one">一个会话将被标记为未读。</item>
+    <!-- Case of 0 or 2 or more results. -->
+    <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> 个会话将被标记为未读。</item>
+    </plurals>
+    <string name="confirm_mark_unread_conversation">这个会话将被标记为未读。</string>
+    <!-- Mark all threads confirmation dialog message -->
+    <string name="confirm_mark_unread_all_conversations">所有会话将被标记为未读。</string>
+	
 </resources>
