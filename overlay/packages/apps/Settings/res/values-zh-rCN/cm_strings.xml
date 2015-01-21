@@ -413,6 +413,13 @@
     <string name="status_bar_notif_count_title">显示通知数量</string>
     <string name="status_bar_notif_count_summary">显示未读通知的数量</string>
 
+    <!-- Status bar - Clock -->
+    <string name="status_bar_clock_style_title">时钟风格</string>
+    <string name="status_bar_clock_style_right">居右</string>
+    <string name="status_bar_clock_style_left">居左</string>
+    <string name="status_bar_clock_style_center">居中</string>
+    <string name="status_bar_clock_style_hidden">隐藏</string>
+
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">电量图标风格</string>
     <string name="status_bar_battery_style_icon_portrait">纵向</string>
