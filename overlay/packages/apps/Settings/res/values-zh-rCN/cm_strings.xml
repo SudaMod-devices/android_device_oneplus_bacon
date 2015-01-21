@@ -951,7 +951,7 @@
     <string name="unlock_scramble_pin_layout_title">乱序布局</string>
     <string name="unlock_scramble_pin_layout_summary">当解锁设备时使用乱序 PIN 布局</string>
 
-    <string name="link_volume_option_title">铃声信息通知声一样大</string>
+    <string name="link_volume_option_title">统一铃声、信息通知声</string>
     <string name="notification_volume_option_title">通知音量</string>
 
     <!-- Notification drawer -->

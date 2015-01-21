@@ -123,5 +123,8 @@
 
     <!-- Dialog -->
     <string name="dialog_confirm">确认</string>
+	
+	<!-- Text for manage apps button -->
+    <string name="manage_apps_button_text">应用</string>	
 
 </resources>
