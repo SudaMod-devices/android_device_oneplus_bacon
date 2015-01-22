@@ -38,24 +38,17 @@
     <string name="root_access_all">应用与 ADB</string>
 
     <!-- Sound settings screen -->
-    <string name="ring_mode_mute">静音模式</string>
-    <string name="ring_mode_normal">普通模式</string>
     <string name="ring_mode_title">响铃模式</string>
+    <string name="ring_mode_normal">普通模式</string>
     <string name="ring_mode_vibrate">振动模式</string>
-
-    <string name="ring_mode_unchanged">未修改</string>
+    <string name="ring_mode_mute">静音模式</string>
 
     <!-- Profiles settings  -->
      <string name="profiles_settings_title">情景模式</string>
      <string name="profiles_add">添加</string>
-     <string name="profile_menu_delete">删除</string>
      <string name="profile_settings_title">情景</string>
      <string name="profile_empty_list_profiles_off">如果您想配置并使用系统情景，请先开启情景模式。</string>
      <string name="profile_trigger_configure">设定触发条件</string>
-     <string name="profile_triggers">触发条件</string>
-     <string name="profile_trigger_filter_all">所有触发条件</string>
-     <string name="profile_trigger_filter_wifi">Wi\u2011Fi 触发器</string>
-     <string name="profile_trigger_filter_bluetooth">蓝牙触发</string>
      <string name="profile_write_nfc_tag">写到 NFC 标签</string>
      <string name="profile_write_touch_tag">触摸标签以便写入</string>
      <string name="profile_write_success">标签写入成功！</string>
@@ -65,53 +58,39 @@
      <string name="profile_unknown_nfc_tag">未知情景</string>
      <string name="profile_add_nfc_text">此 NFC 标签是与一个未知的情景相连的。把此 NFC 标签连接到一个现有的情景将会允许您以后选择这个情景。</string>
      <string name="profile_select">选择情景</string>
-    <string name="profile_remove_dialog_message">移除情景模式 %1$s?</string>
-    <string name="profile_populate_profile_from_state">确认使用现有设备的情景模式?</string>
-    <string name="profile_menu_fill_from_state">导入当前的设备设置</string>
+     <string name="profile_remove_dialog_message">移除情景模式 %1$s?</string>
+     <string name="profile_populate_profile_from_state">确认使用现有设备的情景模式?</string>
+     <string name="profile_menu_fill_from_state">导入当前的设备设置</string>
+     <string name="profile_remove_current_profile">不能删除当前配置!</string>
 
     <!-- Add Profile -->
-    <string name="add_profile_dialog_title">创建新的情景模式</string>
      <string name="profile_name_title">名称</string>
-     <string name="profile_profile_name_prompt">为新的情景模式输入一个名称</string>
-     <string name="menu_new_profile">新情景模式</string>
      <string name="new_profile_name">&lt;新情景模式&gt;</string>
 
     <!-- Rename Dialog  -->
      <string name="rename_dialog_title">重命名</string>
      <string name="rename_dialog_message">输入一个新名称</string>
-     <string name="duplicate_profile_name">此情景名称已被使用！</string>
-     <string name="duplicate_appgroup_name">此应用组名称已被使用！</string>
+     <string name="rename_dialog_hint">键入名称</string>
 
     <!-- Reset Profiles -->
      <string name="profile_reset_title">重置</string>
      <string name="profile_reset_message">您确定要删除所有用户创建的情景与应用组并且还原为默认值？</string>
 
-    <!-- Delete confimation messages -->
-     <string name="profile_delete_confirm">您确定要删除此情景？</string>
-     <string name="profile_app_delete_confirm">您确定要移除此应用？</string>
-     <string name="profile_cannot_delete">当前使用中的情景不能被删除</string>
-
     <!-- Profile network mode -->
      <string name="profile_networkmode_2g">2G</string>
      <string name="profile_networkmode_3g">3G</string>
-    <string name="profile_networkmode_4g">4G</string>
+     <string name="profile_networkmode_4g">LTE</string>
      <string name="profile_networkmode_2g3g">2G/3G</string>
-    <string name="profile_networkmode_2g3g4g">2G/3G/4G</string>
+     <string name="profile_networkmode_2g3g4g">2G/3G/LTE</string>
 
     <!-- Profile Config screen PreferenceGroup titles -->
-     <string name="profile_connectionoverrides_title">连接覆盖</string>
      <string name="profile_volumeoverrides_title">音量覆盖</string>
-     <string name="connection_state_disabled">禁用</string>
-     <string name="connection_state_enabled">启用</string>
      <string name="volume_override_summary">设置为 %1$s/%2$s</string>
-    <string name="volume_override_summary_no_override">不要覆盖</string>
-    <string name="profile_volume_override_checkbox_label">覆盖</string>
+     <string name="profile_volume_override_checkbox_label">覆盖</string>
 
     <!-- Menu item for managing profiles -->
      <string name="profile_profiles_manage">情景</string>
      <string name="profile_profile_manage">管理情景</string>
-     <string name="profile_appgroups_manage">应用组</string>
-     <string name="profile_appgroup_manage">管理应用组</string>
 
     <!-- Profile settings screen, section header for settings related to notification profiles -->
      <string name="profile_settings">情景设置</string>
@@ -124,31 +103,20 @@
     <string name="ringer_mode">铃声模式</string>
     <string name="lights_mode">灯光模式</string>
     <string name="vibrate_mode">振动模式</string>
-    <string name="choose_soundtone">选择通知铃声</string>
-    <string name="choose_ringtone">选择铃声</string>
 
     <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
     <string name="soundtone_title">提醒音</string>
     <string name="soundtone_summary" translatable="false">""</string>
 
     <!-- Title for application group setting screen -->
-     <string name="profile_appgroups_title">应用组</string>
      <string name="profile_applist_title">应用</string>
-     <string name="profile_new_appgroup">新的应用组</string>
-     <string name="profile_delete_appgroup">删除该应用组？</string>
-     <string name="profile_appgroup_name_prompt">为新的应用组输入一个名称</string>
-     <string name="profile_appgroup_name_title">名称</string>
 
     <!-- Add application dialog box title -->
      <string name="profile_choose_app">选择应用</string>
 
     <!-- Profiles - system settings -->
      <string name="profile_system_settings_title">系统设置</string>
-     <string name="profile_lockmode_title">锁屏模式</string>
-     <string name="profile_lockmode_default">默认</string>
-     <string name="profile_lockmode_insecure">不安全</string>
-     <string name="profile_lockmode_disabled">已禁用</string>
-     <string name="profile_lockmode_default_summary">使用系统默认值</string>
+    <string name="profile_lockmode_title">锁屏模式</string>
      <string name="profile_lockmode_insecure_summary">使用不安全锁屏</string>
      <string name="profile_lockmode_disabled_summary">锁屏已禁用</string>
      <string name="profile_airplanemode_title">飞行模式</string>
@@ -160,9 +128,7 @@
      <string name="toggleGPS">GPS</string>
      <string name="toggleData">移动数据</string>
      <string name="toggleSync">自动同步数据</string>
-     <string name="toggle2g3g">2G/3G</string>
-    <string name="toggle2g3g4g">2G/3G/4G</string>
-     <string name="toggleWimax">WiMAX</string>
+     <string name="toggle2g3g4g">首选网络类型</string>
      <string name="toggleNfc">NFC</string>
 
     <!-- Hardware keys -->
@@ -267,7 +233,6 @@
      <string name="blacklist_bad_number_add">无法添加无效号码到黑名单</string>
 
     <!-- Blacklist management -->
-     <string name="add_blacklist_number">添加号码</string>
      <string name="remove_blacklist_number_title">移除号码</string>
      <string name="remove_blacklist_entry">您确定要从黑名单中移除吗？</string>
      <string name="select_contact">选择联系人</string>
@@ -281,7 +246,6 @@
     <string name="menu_hidden_apps_reset_lock">重置锁定图案</string>
     <string name="protected_apps">受保护的应用</string>
     <string name="saving_protected_components">正在保存组件状态\u2026</string>
-    <string name="launch_app">启动应用</string>
 
      <string name="pa_login_username_hint">用户名(电子邮件)</string>
      <string name="pa_login_password_hint">密码</string>
@@ -312,6 +276,12 @@
      <string name="block_notifications_summary">管理被忽略的通知和过滤器</string>
      <string name="no_filters_title">没有设置过滤器。若要过滤通知，请长按它并选择“忽略像这样的消息”。</string>
 
+    <!-- CM Updater -->
+    <string name="cmupdate_settings_title">CyanogenMod更新</string>
+
+    <!-- About phone screen, CyanogenMod version -->
+    <string name="mod_version">CyanogenMod版本</string>
+    <string name="mod_version_default">未知</string>
     <string name="model_name">手机型号</string>
 
     <!-- About phone screen, build date -->
@@ -333,13 +303,8 @@
 
     <!-- Privacy Settings Header item -->
     <string name="privacy_settings_cyanogenmod_title">隐私</string>
-    <string name="privacy_settings_cyanogenmod_category" translatable="false">CyanogenMod</string>
 
     <!-- Privacy Guard -->
-     <string name="privacy_guard_switch_label">启用隐私防护</string>
-    <string name="privacy_guard_dlg_title">是否启用隐私防护？</string>
-     <string name="privacy_guard_dlg_text">启用隐私防护后，应用将无法访问个人隐私数据，例如：联系人、短信或通话记录。</string>
-     <string name="privacy_guard_dlg_system_app_text">当对内置的应用启用隐私防护后，应用将不能访问个人隐私数据。这可能导致其他应用的不正常工作。</string>
      <string name="privacy_guard_default_title">默认启用隐私防护</string>
      <string name="privacy_guard_default_summary">默认对新安装的应用启用隐私防护</string>
      <string name="privacy_guard_manager_title">隐私防护</string>
@@ -366,15 +331,15 @@
      <!-- Setting checkbox summary for Whether to enable Android debugging support on the phone -->
      <string name="enable_adb_summary_cm">开启 Android Debug Bridge (adb) 界面</string>
 
-    <!-- Setting checkbox summary for displaying USB debugging notification -->
-     <string name="adb_notify">USB 调试通知</string>
-     <string name="adb_notify_summary">USB 调试模式连接时将显示一个通知</string>
-
     <!-- Android debugging over WiFi -->
     <string name="adb_over_network">网络 ADB 调试</string>
     <string name="adb_over_network_summary">通过网络接口 (Wi\u2011Fi，USB 网络) 启用 TCP/IP 调试。该设置重启后失效</string>
     <!-- Warning for Adb over Network -->
     <string name="adb_over_network_warning">警告：网络 ADB 调试启用后，您的设备将会在已连接的网络 (包括 GSM 数据网络) 上被视为是开放的，并有可能被侵入！\n\n请仅在您所信任的网络上使用此功能。\n\n您确实要启用该功能吗？</string>
+
+    <!-- Setting checkbox summary for displaying USB debugging notification -->
+     <string name="adb_notify">USB 调试通知</string>
+     <string name="adb_notify_summary">USB 调试模式连接时将显示一个通知</string>
 
     <!-- Hostname setting -->
      <string name="device_hostname">设备网络名</string>
@@ -619,7 +584,6 @@
 
     <!-- Profiles -->
      <string name="profile_menu_delete_title">删除</string>
-     <string name="profile_menu_triggers_title">修改触发器</string>
 
      <string name="profile_action_none">无操作</string>
      <string name="profile_action_disabled">禁用</string>
@@ -693,16 +657,18 @@
     <string name="custom_screencolor">自定义屏幕颜色</string>
     <string name="screencolor_save">保存</string>
     <string name="screencolor_cancel">取消</string>
-    <string name="previous_str">Previous</string>
-    <string name="new_str">New</string>
-    <string name="restore_preview">View default picture</string>
-    <string name="selectnewfile_menu">View new picture from Gallery</string>
-    <string name="selectfile_menu">View picture from Gallery</string>
-    <string name="restore_default_str">Reset</string>
-    <string name="hue_str">Hue: <xliff:g id="hue_value">%1$s</xliff:g></string>
-    <string name="saturation_str">Saturation: <xliff:g id="saturation_value">%1$s</xliff:g></string>
-    <string name="contrast_str">Contrast: <xliff:g id="contrast_value">%1$s</xliff:g></string>
-    <string name="intensity_str">Intensity: <xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+    <string name="restore_preview">查看默认图片</string>
+    <string name="selectnewfile_menu">从图库查看新图片</string>
+    <string name="selectfile_menu">从图库查看图片</string>
+    <string name="restore_default_str">重置</string>
+    <string name="hue_str">色调：<xliff:g id="hue_value">%1$s</xliff:g></string>
+    <string name="saturation_str">饱和度：<xliff:g id="saturation_value">%1$s</xliff:g></string>
+    <string name="contrast_str">对比度：<xliff:g id="contrast_value">%1$s</xliff:g></string>
+    <string name="intensity_str">强度：<xliff:g id="intensity_str_value">%1$s</xliff:g></string>
+
+    <string name="screen_color_setting_standard">标准</string>
+    <string name="screen_color_setting_vivid">生动</string>
+    <string name="screen_color_setting_custom">自定义</string>
 
     <string name="settings_reset_button">恢复默认值</string>
 
@@ -723,11 +689,8 @@
     <string name="bluetooth_dun_profile_summary_use_for">使用拨号网络访问</string>
     <!-- Bluetooth settings.  Connection options screen.  The summary for the SAP checkbox preference that describes how checking it will set the SAP profile as preferred. -->
     <string name="bluetooth_sap_profile_summary_use_for">使用SIM访问</string>
-
-    <!-- Checkbox title for option to toggle wifi RSSI threshold check -->
-    <string name="wifi_rssi_threshold_check">Enable RSSI threshold</string>
-    <!-- Checkbox summary for option to toggle poor network detection -->
-    <string name="wifi_rssi_threshold_check_summary">Do not connect to an AP if RSSI is poor</string>
+    <!-- Bluetooth settings.  A checkbox to set if we should accept all the file types regardless of their presence in MIME type whitelist -->
+    <string name="bluetooth_accept_all_files">接收所有类型文件</string>
 
     <!-- SIM lock settings title  [CHAR LIMIT=40] -->
     <string name="sim_lock_settings_cm">SIM/RUIM卡锁定</string>
@@ -735,9 +698,6 @@
     <string name="sim_lock_settings_category_cm">设置SIM/RUIM卡锁定</string>
     <!-- Security & location settings screen, section heading for settings related to sim card locking  [CHAR LIMIT=40] -->
     <string name="sim_lock_settings_title_cm">SIM/RUIM卡锁定</string>
-
-    <!-- SIM card lock settings screen, SIM PIN dialog message when SIM card is absent-->
-    <string name="sim_absent">没有SIM/RUIM卡</string>
 
     <!-- SIM card lock settings screen, SIM PIN dialog message when PIN disable fails-->
     <string name="sim_pin_disable_failed">不能禁用PIN。</string>
@@ -755,15 +715,7 @@
     <!-- SIM card lock settings screen, toast displayed on PIN1 disable: -->
     <string name="sim_pin_disabled">PIN1已启用!</string>
 
-    <!-- About tablet screen, summary of the item that takes you to tablet status screen -->
-    <string name="device_status_summary_cm" product="tablet">电池状态、 网络和其他信息</string>
-    <!-- About phone screen, summary of the item to go into the phone status screen -->
-    <string name="device_status_summary_cm" product="default">电池状态、 电池电量等。</string>
     <string name="subs_settings">SIM 卡状态</string>
-    <!-- About phone screen, summary of the item to go into the phone status screen -->
-    <string name="device_additional_status_summary">电话号码，信号，IMEI, 其他.</string>
-    <!-- In About phone->Status screen, title of the item to go into the subscription status screen -->
-    <string name="device_additional_status">其他状态信息</string>
 
     <!-- string resources for USB OTG & UICC features -->
     <string name="storage_usb">USB存储</string>
@@ -800,12 +752,12 @@
     <string name="uicc_media_format_title" product="default">格式化UICC存储</string>
     <string name="usb_media_format_summary" product="default">擦除所有USB存储数据</string>
     <string name="uicc_media_format_summary" product="default">擦除所有UICC存储数据</string>
+    <string name="usb_media_format_desc" product="default">格式化USB存储?你将失去<b>所有</b>数据!</string>
+    <string name="uicc_media_format_desc" product="default">格式化UICC存储?你将失去<b>所有</b>数据!</string>
     <string name="usb_media_format_button_text" product="default">格式化USB存储</string>
     <string name="uicc_media_format_button_text" product="default">格式化UICC存储</string>
     <string name="usb_media_format_final_desc" product="default">格式化USB存储?此操作不可逆!</string>
     <string name="uicc_media_format_final_desc" product="default">格式化UICC存储?此操作不可逆!</string>
-    <string name="usb_media_format_desc" product="default">格式化USB存储?你将失去<b>所有</b>数据!</string>
-    <string name="uicc_media_format_desc" product="default">格式化UICC存储?你将失去<b>所有</b>数据!</string>
     <string name="usb_media_format_gesture_explanation" product="default">您需要绘制解锁图案以确认您要格式化USB存储设备。</string>
     <string name="uicc_media_format_gesture_explanation" product="default">您需要绘制解锁图案以确认您要格式化UICC存储设备。</string>
 
@@ -826,33 +778,29 @@
     <string name="data_usage_tab_slot">SIM </string>
 
     <!-- MultiSim Settings changes-->
-    <string name="close_dialog">完成</string>
     <string name="sim_enabler_title">SIM卡激活</string>
     <string name="sim_enabler_summary">SIM is %1$s</string>
     <string name="sim_enabled">启用</string>
     <string name="sim_disabled">禁用</string>
     <string name="sim_missing">丢失或出错</string>
-    <string name="sim_enabler_need_enable_sim">激活SIM卡，确定？</string>
     <string name="sim_enabler_need_disable_sim">停用SIM卡，确定？</string>
     <string name="sim_enabler_airplane_on">出错，飞行模式已开启</string>
     <string name="sim_enabler_in_call">出错，通话中</string>
     <string name="sim_enabler_both_inactive">"出错，不能禁用任何SIMs"</string>
-    <string name="sim_enabler_enabling">激活...</string>
+    <string name="sim_enabler_sim">SIM</string>
+    <string name="sim_enabler_enabling">激活...</string>    
     <string name="sim_enabler_disabling">停用中...</string>
     <string name="sub_activate_success">激活成功</string>
-    <string name="sub_activate_failed">激活失败</string>
     <string name="sub_deactivate_success">成功停用</string>
-    <string name="sub_deactivate_failed">停用失败</string>
-    <string name="sub_deactivate_not_supported">不支持停用</string>
-    <string name="sub_activate_not_supported">不支持激活</string>
-    <string name="slot_name">SIM <xliff:g id="sub">%d</xliff:g></string>
+
+    <string name="primary_sub_select_title">默认3G/LTE订阅</string>
 
     <string name="usb_charging_title">充电</string>
     <string name="usb_charging_summary">usb连接仅用于充电</string>
-    <string name="primary_sub_select_title">默认4G/3G订阅</string>
 
-    <string name="usb_sdcard_summary">使您可以在计算机和 SD 卡之间传输文件</string>
     <string name="usb_sdcard_title">挂载SD卡</string>
+    <string name="usb_sdcard_summary">使您可以在计算机和 SD 卡之间传输文件</string>
+
     <string name="external_storage_turn_on">外部存储已打开</string>
     <string name="external_storage_turn_off">外部存储已关闭</string>
 
@@ -902,7 +850,6 @@
 
     <!-- Performance Settings : Performance profile settings -->
     <string name="perf_profile_title">情景模式</string>
-    <string name="perf_profile_summary" translatable="false">%s</string>
 
     <!-- Performance : Force high-end graphics -->
     <string name="pref_force_highend_gfx_title">强制高端图形</string>
@@ -989,18 +936,27 @@
 
     <!-- WiFi Ad-Hoc mode -->
     <string name="wifi_mode">模式</string>
-    <string name="wifi_mode_ibss">Ad-Hoc (IBSS) Network</string>
+    <string name="wifi_mode_ibss">Ad-Hoc (IBSS) 网络</string>
     <string name="wifi_mode_ibss_short">Ad-Hoc</string>
 
-    <string name="wifi_ibss_freq_title">Channel / Frequency</string>
-    <string name="wifi_channel">Channel</string>
+    <string name="wifi_ibss_freq_title">频带/频率</string>
+    <string name="wifi_channel">频带</string>
     <string name="wifi_mhz">MHz</string>
 
     <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
     <string name="regulatory_information_dialog_title">@string/regulatory_information</string>
 
     <!-- SAR information -->
-    <string name="maximum_head_level">头部: %1$s W/kg</string>
-    <string name="maximum_body_level">整机: %1$s W/kg</string>
+    <string name="maximum_head_level">头部：%1$s 瓦特/公斤</string>
+    <string name="maximum_body_level">身体：%1$s 瓦特/公斤</string>
 
+    <string name="power_menu_expanded_desktop">扩展桌面</string>
+    <string name="expanded_hide_nothing">都不隐藏</string>
+    <string name="expanded_hide_status">隐藏状态栏</string>
+    <string name="expanded_hide_navigation">隐藏导航栏</string>
+    <string name="expanded_hide_both">都隐藏</string>
+    <string name="expanded_nothing_to_show">要添加自定义每个应用程序配置为展开状态，设置"启用所有"至关闭位置</string>
+    <string name="expanded_desktop_state">扩展状态</string>
+    <string name="expanded_enabled_for_all">启用所有</string>
+    <string name="expanded_user_configurable">用户配置</string>
 </resources>
