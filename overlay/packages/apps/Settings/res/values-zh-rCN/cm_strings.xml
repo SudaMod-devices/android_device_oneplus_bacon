@@ -944,7 +944,7 @@
     <string name="wifi_mhz">MHz</string>
 
     <!-- About phone settings screen, setting option dialog title to show regulatory information [CHAR LIMIT=25] -->
-    <string name="regulatory_information_dialog_title">@string/regulatory_information</string>
+    <string name="regulatory_information_dialog_title" translatable="false">@string/regulatory_information</string>
 
     <!-- SAR information -->
     <string name="maximum_head_level">头部：%1$s 瓦特/公斤</string>
@@ -955,7 +955,7 @@
     <string name="expanded_hide_status">隐藏状态栏</string>
     <string name="expanded_hide_navigation">隐藏导航栏</string>
     <string name="expanded_hide_both">都隐藏</string>
-    <string name="expanded_nothing_to_show">要添加自定义每个应用程序配置为展开状态，设置"启用所有"至关闭位置</string>
+    <string name="expanded_nothing_to_show">要想启用自定义每个应用程序配置，请将"启用所有"关闭</string>
     <string name="expanded_desktop_state">扩展状态</string>
     <string name="expanded_enabled_for_all">启用所有</string>
     <string name="expanded_user_configurable">用户配置</string>
