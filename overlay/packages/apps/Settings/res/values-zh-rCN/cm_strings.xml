@@ -922,6 +922,11 @@
     <string name="qs_action_delete">删除</string>
     <string name="qs_action_add">添加</string>
     <string name="qs_action_no_more_tiles">不能再添加更多磁贴了</string>
+    <string name="qs_title_profiles">情景模式</string>
+    <string name="qs_title_performance">性能模式</string>
+    <string name="qs_title_nfc">NFC</string>
+    <string name="qs_title_compass">指南针</string>
+    <string name="qs_title_lockscreen">锁屏</string>
 
     <string name="qs_main_tiles_title">放大第一行</string>
     <string name="qs_main_tiles_summary_on">第一行显示两个主要磁贴</string>
@@ -951,7 +956,7 @@
     <string name="maximum_body_level">身体：%1$s 瓦特/公斤</string>
 
     <string name="power_menu_expanded_desktop">扩展桌面</string>
-    <string name="expanded_hide_nothing">都不隐藏</string>
+    <string name="expanded_hide_nothing">不隐藏</string>
     <string name="expanded_hide_status">隐藏状态栏</string>
     <string name="expanded_hide_navigation">隐藏导航栏</string>
     <string name="expanded_hide_both">都隐藏</string>
@@ -959,4 +964,11 @@
     <string name="expanded_desktop_state">扩展状态</string>
     <string name="expanded_enabled_for_all">启用所有</string>
     <string name="expanded_user_configurable">用户配置</string>
+
+    <string name="lockscreen_settings_title">锁屏</string>
+    <string name="lockscreen_targets_message">锁屏快捷方式</string>
+    <string name="lockscreen_default_target">默认</string>
+    <string name="lockscreen_message">点击左边或右边的图标来指定快捷方式</string>
+    <string name="lockscreen_choose_action_title">选择应用</string>
+
 </resources>
