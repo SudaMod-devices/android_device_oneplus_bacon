@@ -215,7 +215,7 @@
 
     <!-- String used in MemoryStatusActivity.java -->
     <string name="memory_status_title">存储状态</string>
-    <string name="sms_phone_memory_usage">短信:已使用:<xliff:g id="used">%1$d</xliff:g>，总共:<xliff:g id="total">%2$d</xliff:g> /string>
+    <string name="sms_phone_memory_usage">短信:已使用:<xliff:g id="used">%1$d</xliff:g>，总共:<xliff:g id="total">%2$d</xliff:g> </string>
     <string name="mms_phone_memory_usage">彩信:已使用:<xliff:g id="used">%1$d</xliff:g>，总共:<xliff:g id="total">%2$d</xliff:g> </string>
 
     <!-- Settings item description for SMS and MMS Validity period -->
