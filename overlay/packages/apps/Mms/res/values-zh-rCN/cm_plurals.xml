@@ -15,7 +15,14 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <plurals name="remaining_delay_time">
-        <item quantity="one">将在1秒后发送，点击取消</item>
-        <item quantity="other">将在%1$d秒后发送，点击取消.</item>
+        <item quantity="one">将在1秒后发送，点击取消。</item>
+        <item quantity="other">将在%1$d秒后发送，点击取消。</item>
+    </plurals>
+
+    <plurals name="confirm_delete_messages">
+        <!-- Case of 1 result. -->
+        <item quantity="one">一条信息将被删除。</item>
+        <!-- Case of 0 or 2 or more results. -->
+        <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g>条信息将被删除。</item>
     </plurals>
 </resources>
