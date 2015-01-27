@@ -50,6 +50,21 @@
     <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permgroupdesc_security">与设备安全信息相关的权限。</string>
 
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessThemeService">访问主题服务</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessThemeService">允许应用访问主题服务。正常应用不应需要此权限。</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readThemes">读取您的主题信息</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readThemesDesc">允许应用读取您的主题并确定已应用的主题。</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writeThemes">修改您的主题</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writeThemesDesc">允许应用插入新的主题和修改已应用的主题。</string>
+
     <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permlab_readPhoneBlacklist">读取手机黑名单</string>
     <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
@@ -114,6 +129,8 @@
     <string name="adb_both_active_notification_title">USB 和网络 ADB 调试已启用</string>
     <!-- ADB notification message-->
     <string name="adb_active_generic_notification_message">触摸以禁用调试。</string>
+    <!-- USB_PREFERENCES: Notification for when no USB options chosen.  This is the title -->
+    <string name="usb_choose_notification_title">点击选择USB选项。</string>
 
     <!-- App ops requests -->
     <string name="app_ops_access_camera">获取相机使用权</string>
@@ -127,7 +144,7 @@
     <string name="app_ops_delete_contacts">删除联系人</string>
     <string name="app_ops_delete_mms">删除彩信</string>
     <string name="app_ops_delete_sms">删除短信</string>
-    <string name="app_ops_draw_on_top">draw windows on top</string>
+    <string name="app_ops_draw_on_top">在顶端绘制</string>
     <string name="app_ops_get_usage_stats">获取软件使用情况</string>
     <string name="app_ops_keep_device_awake">保持设备唤醒</string>
     <string name="app_ops_make_phone_call">打电话</string>
@@ -206,8 +223,31 @@
     <!-- Text of the checkbox for the permission confirmation dialog to remember the user's choice. [CHAR LIMIT=40] -->
     <string name="permission_remember_choice">记住</string>
     <string name="permission">权限</string>
+
+    <!-- Default wi-fi hotspot ssid -->
+    <string name="def_wifi_wifihotspot_ssid" translatable="false"></string>
+    <!-- Default wi-fi hotspot pass -->
+    <string name="def_wifi_wifihotspot_pass" translatable="false"></string>
+    <!-- Default wi-fi direct name -->
+    <string name="def_wifi_direct_name" translatable="false"></string>
+
     <!-- Performance profile modes -->
     <string name="perf_profile_pwrsv">省电模式</string>
     <string name="perf_profile_bal">平衡模式</string>
     <string name="perf_profile_perf">性能模式</string>
+
+    <!-- Theme installation error notification -->
+    <string name="theme_install_error_title">安装主失败</string>
+    <string name="theme_install_error_message">%s安装失败</string>
+
+    <!-- [CHAR LIMIT=NONE] Message shown in dialog on first boot after clean install for each .apk that is optimized. -->
+    <string name="android_installing_apk">Installing app
+        <xliff:g id="number" example="123">%1$d</xliff:g> /
+        <xliff:g id="number" example="123">%2$d</xliff:g>.</string>
+
+    <!-- [CHAR LIMIT=40] Title of dialog that is shown when performing a system install. -->
+    <string name="android_installing_title">系统正在安裝\u2026</string>
+
+    <string name="theme_reset_notification_title">主题重置</string>
+    <string name="theme_reset_notification_body">由于多个应用程序崩溃，系统主题被重置。</string>
 </resources>

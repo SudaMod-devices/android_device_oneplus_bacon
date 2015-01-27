@@ -917,23 +917,40 @@
 
     <string name="qs_order_title">长按进行选择排序</string>
     <string name="add_qs">增加新磁贴</string>
-    <string name="cast_screen">投影屏幕</string>
-    <string name="hotspot">热点</string>
+
     <string name="qs_action_delete">删除</string>
     <string name="qs_action_add">添加</string>
     <string name="qs_action_no_more_tiles">不能再添加更多磁贴了</string>
+
+    <string name="qs_tile_wifi">Wi\u2011Fi</string>
+    <string name="qs_tile_bluetooth">蓝牙</string>
+    <string name="qs_tile_display_inversion">彩色反转</string>
+    <string name="qs_tile_cellular_data">数据连接</string>
+    <string name="qs_tile_airplane_mode">飞行模式</string>
+    <string name="qs_tile_display_rotation">屏幕旋转</string>
+    <string name="qs_tile_flashlight">手电筒</string>
+    <string name="qs_tile_location">位置信息</string>
+    <string name="qs_tile_cast_screen">投影屏幕</string>
+    <string name="qs_tile_hotspot">热点</string>
+    <string name="qs_tile_adb_over_network">ADB网络调试</string>
     <string name="qs_title_profiles">情景模式</string>
     <string name="qs_title_performance">性能模式</string>
     <string name="qs_title_nfc">NFC</string>
     <string name="qs_title_compass">指南针</string>
     <string name="qs_title_lockscreen">锁屏</string>
+    <string name="qs_tile_lte">LTE</string>
+    <string name="qs_tile_visualizer">AudioFX</string>
 
     <string name="qs_main_tiles_title">放大第一行</string>
     <string name="qs_main_tiles_summary_on">第一行显示两个主要磁贴</string>
     <string name="qs_main_tiles_summary_off">三个一行</string>
 
-    <string name="qs_advanced_location_title">定位选项快捷设置</string>
-    <string name="qs_advanced_location_summary">能够对定位进行快捷设置</string>
+    <string name="qs_advanced_location_title">定位快捷设置</string>
+    <string name="qs_advanced_location_summary">对定位模式进行设置</string>
+
+    <!-- Gesture Settings -->
+    <!-- Settings main menu entry -->
+    <string name="gesture_settings_title">手势</string>
 
     <!-- Themes Settings -->
     <!-- Settings main menu entry -->
