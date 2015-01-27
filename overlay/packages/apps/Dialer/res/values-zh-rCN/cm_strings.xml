@@ -115,8 +115,6 @@
     <string name="call_log_show_all_slots">所有SIM卡</string>
     <string name="call_log_all_calls_header">所有通话</string>
     <string name="calllog_search_hint">查找通话记录</string>
-    <string name="add_to_white_list">添加到白名单</string>
-    <string name="add_to_black_list">添加到黑名单</string>
 
     <string name="msim_ime_dialog_title">设备标识符</string>
 
