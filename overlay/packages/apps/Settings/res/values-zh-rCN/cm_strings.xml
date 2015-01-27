@@ -933,11 +933,11 @@
     <string name="qs_tile_cast_screen">投影屏幕</string>
     <string name="qs_tile_hotspot">热点</string>
     <string name="qs_tile_adb_over_network">ADB网络调试</string>
-    <string name="qs_title_profiles">情景模式</string>
-    <string name="qs_title_performance">性能模式</string>
-    <string name="qs_title_nfc">NFC</string>
-    <string name="qs_title_compass">指南针</string>
-    <string name="qs_title_lockscreen">锁屏</string>
+    <string name="qs_tile_profiles">情景模式</string>
+    <string name="qs_tile_performance">性能模式</string>
+    <string name="qs_tile_nfc">NFC</string>
+    <string name="qs_tile_compass">指南针</string>
+    <string name="qs_tile_lockscreen">锁屏</string>
     <string name="qs_tile_lte">LTE</string>
     <string name="qs_tile_visualizer">AudioFX</string>
 
