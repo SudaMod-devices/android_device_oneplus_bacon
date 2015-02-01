@@ -268,7 +268,6 @@
      <string name="app_security_title">应用安全</string>
      <string name="sms_security_check_limit_title">短信限制</string>
      <string name="sms_security_check_limit_summary">应用在 30 分钟内发送 %d 条信息后需要用户认可才能继续</string>
-     <string name="sms_security_check_limit_default">30 (默认)</string>
 
      <string name="spam_added_title"> %1$s 已添加</string>
      <string name="spam_last_blocked_title">上次屏蔽 <xliff:g id="time_since" example="5 minutes ago">%1$s</xliff:g> (总计: <xliff:g id="count" example="2 times">%2$s</xliff:g>)</string>
@@ -287,10 +286,6 @@
     <!-- About phone screen, build date -->
     <string name="build_date">编译日期</string>
     <string name="build_date_default">2014-01-01-0000</string>
-
-    <!--- Advanced Settings -->
-    <string name="advanced_settings">高级设置</string>
-    <string name="advanced_settings_summary">更多设置选项</string>
 
     <string name="contributor_cloud_title">贡献者</string>
 
@@ -367,7 +362,15 @@
     <!-- Navigation Bar -->
     <string name="navigation_bar_category">导航栏</string>
     <string name="navigation_bar_left_title">左手模式</string>
-    <string name="navigation_bar_left_summary">横屏时，导航栏显示在左侧</string>
+    <string name="navigation_bar_left_summary">横屏时在屏幕左侧显示虚拟键</string>
+    <string name="navigation_bar_title">按键与布局</string>
+    <string name="navigation_bar_help_text">1 - 点击锁定图标以开始编辑\n\n2 - 点击任何按键以指定或改变它的功能\n\n3 - 长按任何按键以重新排列按键顺序\n\n4 - 再次点击锁定图标将会保存您的改变\n\n5 - 如果您想还原为系统默认值，请点击重置键\n\n</string>
+    <string name="navigation_restore_button_text">还原\n恢复默认值</string>
+    <string name="navigation_edit_button_text">编辑</string>
+    <string name="navigation_save_button_text">保存</string>
+    <string name="navigation_bar_reset_message">您确定要删除目前的设置并还原为系统默认值？</string>
+    <string name="navigation_bar_arrow_keys_title">输入时显示左右光标按钮</string>
+    <string name="navigation_bar_arrow_keys_summary">输入时显示左右光标按钮</string>
 
     <string name="header_category_personalization">个性化</string>
 
@@ -384,6 +387,12 @@
     <string name="status_bar_clock_style_left">居左</string>
     <string name="status_bar_clock_style_center">居中</string>
     <string name="status_bar_clock_style_hidden">隐藏</string>
+
+    <string name="status_bar_am_pm_title">上午/下午样式</string>
+    <string name="status_bar_am_pm_info">24小时制</string>
+    <string name="status_bar_am_pm_normal">正常</string>
+    <string name="status_bar_am_pm_small">小</string>
+    <string name="status_bar_am_pm_hidden">隐藏</string>
 
     <!-- Status bar - Battery -->
     <string name="status_bar_battery_style_title">电量图标风格</string>
@@ -988,4 +997,10 @@
     <string name="lockscreen_message">点击左边或右边的图标来指定快捷方式</string>
     <string name="lockscreen_choose_action_title">选择应用</string>
 
+    <!-- WhisperPush -->
+    <string name="whisperpush_title">WhisperPush</string>
+    <string name="whisperpush_summary">管理安全短信设置</string>
+    <string name="whisperpush_registration_title">注册</string>
+    <string name="whisperpush_registration_summary">注册WhisperPush启用加密短信。</string>
+    <string name="whisperpush_identitykey_title">审查身份密钥</string>
 </resources>
