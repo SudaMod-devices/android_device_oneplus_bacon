@@ -44,6 +44,9 @@
     <!-- Content description of the location tile in quick settings when on, high accuracy mode (not shown on the screen). [CHAR LIMIT=NONE] -->
     <string name="accessibility_quick_settings_location_high_accuracy">定位模式报告：准确度高。</string>
 
+    <string name="accessibility_dpad_left">光标左移</string>
+    <string name="accessibility_dpad_right">光标右移</string>
+
     <!-- QuickSettings: Mobile data [CHAR LIMIT=NONE] -->
     <string name="quick_settings_mobile_data_label">移动数据</string>
     <!-- QuickSettings: Roaming [CHAR LIMIT=NONE] -->
@@ -73,14 +76,9 @@
     <string name="quick_settings_compass_init">初始化\u2026</string>
     <string name="quick_settings_lockscreen_label">锁屏</string>
     <string name="quick_settings_network_adb_label">ADB网络调试</string>
-    <string name="quick_settings_visualizer_label">AudioFX</string>
-
-    <!-- Task Manager -->
-    <string name="tasklistview_title">任务管理器</string>
-    <string name="message_switch_fail">不能切换到这个任务，因为它没有界面。</string>
-    <string name="tasklist_killall">杀掉所有</string>
-    <string name="tasklist_memory_usage">"Free/Total Memory: [<xliff:g id="number">%s</xliff:g>] / [<xliff:g id="name">%s</xliff:g>]"</string>
-    <string name="message_keep_one_launcher">至少保留一个桌面程序!</string>
+    <string name="quick_settings_lte_label">LTE</string>
+    <string name="quick_settings_visualizer_label" translatable="false">AudioFX</string>
+    <string name="quick_settings_screen_timeout_detail_title">屏幕超时</string>
 
     <!-- Weather string format in expanded statusbar header -->
     <string name="status_bar_expanded_header_weather_format"><xliff:g id="temp">%1$s</xliff:g> - <xliff:g id="condition">%2$s</xliff:g></string>
@@ -88,5 +86,33 @@
     <string name="left_shortcut_hint">右边滑动%1$s</string>
     <string name="right_shortcut_hint">左边滑动%1$s</string>
 
-    <string name="quick_settings_lte_tile_title">LTE</string>
+    <!-- Dialog title for navigation bar button selection -->
+    <string name="navbar_dialog_title">选择要分配的动作</string>
+    <string name="navbar_home_button">Home 键</string>
+    <string name="navbar_recent_button">任务键</string>
+    <string name="navbar_search_button">搜索键</string>
+    <string name="navbar_back_button">返回键</string>
+    <string name="navbar_empty_button">留空</string>
+    <string name="navbar_menu_conditional_button">菜单键 (自动隐藏)</string>
+    <string name="navbar_menu_always_button">菜单键 (总是显示)</string>
+    <string name="navbar_menu_big_button">菜单键</string>
+
+    <!-- Navigation ring shortcuts -->
+    <string name="navigation_ring_title">快速启动的快捷方式</string>
+    <string name="navring_target_reset_message">删除用户自定义导航栏快捷方式，恢复默认?</string>
+    <string name="navring_target_reset">导航栏快捷方式恢复迷人</string>
+    <string name="navring_action_open_ime_switcher">打开输入法切换器</string>
+    <string name="navring_action_kill_app">关闭应用</string>
+    <string name="navring_action_none">无动作</string>
+    <string name="navring_action_take_screenshot">屏幕截图</string>
+    <string name="navring_action_ring_vibrate">铃声/振动</string>
+    <string name="navring_action_ring_silent">铃声/静音</string>
+    <string name="navring_action_ring_vibrate_silent">铃声/振动/静音</string>
+    <string name="navring_action_screen_off">关闭屏幕</string>
+    <string name="navring_action_torch">打开手电筒</string>
+    <string name="navring_action_google_now">Google Now</string>
+    <string name="navring_choose_action_title">选择动作</string>
+    <string name="select_application">选择应用</string>
+    <string name="lockscreen_target_empty">空</string>
+
 </resources>

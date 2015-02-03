@@ -45,6 +45,16 @@
     <!-- label for item that screenshots in phone options dialog -->
     <string name="global_action_screenshot">屏幕截图</string>
 
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_receiveProtectedSms">接收受保护的短信</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_receiveProtectedSms">允许应用接收受保护的短信。</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_modifyProtectedSmsList">修改受保护的短信列表</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_modifyProtectedSmsList">允许应用修改受保护的短信地址列表。</string>
+
     <!-- Title of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permgrouplab_security">安全</string>
     <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
@@ -222,7 +232,6 @@
 
     <!-- Text of the checkbox for the permission confirmation dialog to remember the user's choice. [CHAR LIMIT=40] -->
     <string name="permission_remember_choice">记住</string>
-    <string name="permission">权限</string>
 
     <!-- Default wi-fi hotspot ssid -->
     <string name="def_wifi_wifihotspot_ssid" translatable="false"></string>
@@ -250,4 +259,13 @@
 
     <string name="theme_reset_notification_title">主题重置</string>
     <string name="theme_reset_notification_body">由于多个应用程序崩溃，系统主题被重置。</string>
+
+    <string name="permlab_interceptSmsSent">拦截传出的短信</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_interceptSmsSent">允许应用拦截传出的短信。恶意程序可能用这种方法阻止发送短信。</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessTorchService">获取手电筒服务</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessTorchService">允许应用访问手电筒服务。 正常应用不应需要此权限。</string>
 </resources>
