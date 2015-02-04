@@ -75,15 +75,20 @@
     <string name="alert_dialog_yes">是</string>
     <string name="alert_dialog_no">否</string>
 
-    <!-- Context menu item on a message for marking as unread -->
+    <!-- Context menu item on a message for marking as unread / read -->
     <string name="menu_as_unread">标记未读</string>
+    <string name="menu_as_read">标记已读</string>
     <!-- Context menu item on a message for marking all threads as unread -->
     <string name="menu_all_as_unread">标记所有未读</string>
-    <!-- Confirm Mark as unread -->
+    <string name="menu_all_as_read">标记所有已读</string>
+    <!-- Confirm Mark as unread / read -->
     <string name="confirm_mark_unread_dialog_title">标记为未读?</string>
-    <string name="confirm_mark_unread_conversation">信息将被标记为未读。</string>
+    <string name="confirm_mark_unread_conversation">这个对话将被标记为未读。</string>
+    <string name="confirm_mark_read_dialog_title">标记为已读?</string>
+    <string name="confirm_mark_read_conversation">这个对话将被标记为已读。</string>
     <!-- Mark all threads confirmation dialog message -->
     <string name="confirm_mark_unread_all_conversations">所有信息将标记为未读。</string>
+    <string name="confirm_mark_read_all_conversations">所有信息将标记为已读。</string>
 
     <!-- Multi recipients -->
     <string name="loading">请稍等\u2026</string>
@@ -332,17 +337,4 @@
     <!-- friendlier text for an activity not found exception for calendar attachments -->
     <string name="calendar_attachment_activity_not_found">未能发现支持的日历应用</string>
 
-	
-    <!-- Confirm Mark As Unread -->
-    <string name="confirm_mark_unread_dialog_title">标记为未读?</string>
-    <plurals name="confirm_mark_unread_conversation">
-    <!-- Case of 1 result. -->
-    <item quantity="one">一个会话将被标记为未读。</item>
-    <!-- Case of 0 or 2 or more results. -->
-    <item quantity="other"><xliff:g id="number" example="15">%1$s</xliff:g> 个会话将被标记为未读。</item>
-    </plurals>
-    <string name="confirm_mark_unread_conversation">这个会话将被标记为未读。</string>
-    <!-- Mark all threads confirmation dialog message -->
-    <string name="confirm_mark_unread_all_conversations">所有会话将被标记为未读。</string>
-	
 </resources>
