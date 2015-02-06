@@ -982,9 +982,39 @@
 
     <string name="lockscreen_targets_message">锁屏快捷方式</string>
     <string name="lockscreen_default_target">默认</string>
+    <string name="lockscreen_none_target">未配置</string>    
     <string name="lockscreen_message">点击左边或右边的图标来指定快捷方式</string>
     <string name="lockscreen_choose_action_title">选择应用</string>
 
     <string name="navigation_ring_title">导航栏快捷方式</string>
     <string name="navigation_ring_message">点击编辑图标进行编辑。\n\n选择所需要的动作进行配置。\n\n点击确认图标保存配置。</string>
+
+    <!-- Stylus Icon -->
+    <string name="stylus_icon_enabled_title">使用触控笔时显示光标</string>
+    <string name="stylus_icon_enabled_summary">使用触控笔悬停或书写时显示指示光标</string>
+
+    <!-- Stylus Gestures -->
+    <string name="gestures_settings_title">触控笔手势</string>
+    <string name="category_spen_title">触控笔手势</string>
+    <string name="enable_subcat_title">触控笔</string>
+    <string name="enable_spen_title_head">启用手势</string>
+    <string name="enable_spen_summary_head">持续压住触控笔按钮启用滑动手势</string>
+    <string name="gestures_subcat_title">手势</string>
+    <string name="gestures_left_spen_title_head">左划</string>
+    <string name="gestures_right_spen_title_head">右划</string>
+    <string name="gestures_up_spen_title_head">上划</string>
+    <string name="gestures_down_spen_title_head">下划</string>
+    <string name="gestures_long_spen_title_head">长按</string>
+    <string name="gestures_double_spen_title_head">双击</string>
+
+    <!-- Gestures Options -->
+    <string name="gestures_action_empty">无操作</string>
+    <string name="gestures_action_home">主屏幕</string>
+    <string name="gestures_action_back">后退</string>
+    <string name="gestures_action_menu">菜单</string>
+    <string name="gestures_action_search">搜索</string>
+    <string name="gestures_action_recent">最近应用</string>
+
+    <!-- Stylus gestures -->
+    <string name="stylus_app_not_installed">%s 未安装</string>
 </resources>

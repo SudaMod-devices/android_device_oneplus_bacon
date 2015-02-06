@@ -260,6 +260,9 @@
     <string name="theme_reset_notification_title">主题重置</string>
     <string name="theme_reset_notification_body">由于多个应用程序崩溃，系统主题被重置。</string>
 
+    <!-- stylus gestures support -->
+    <string name="stylus_app_not_installed">%s未安装</string>
+
     <string name="permlab_interceptSmsSent">拦截传出的短信</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permdesc_interceptSmsSent">允许应用拦截传出的短信。恶意程序可能用这种方法阻止发送短信。</string>
@@ -268,4 +271,9 @@
     <string name="permlab_accessTorchService">获取手电筒服务</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permdesc_accessTorchService">允许应用访问手电筒服务。 正常应用不应需要此权限。</string>
+
+    <string name="permlab_preventpower">阻止电源键</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_preventpower">允许应用完全掌控电源键。</string>
+
 </resources>
