@@ -59,6 +59,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuild/RomUpdater/lib/arm/libcocklogic.so:system/priv-app/RomUpdater/lib/arm/libcocklogic.so \
     $(LOCAL_PATH)/prebuild/RomUpdater/lib/arm/libtnet-2.0.17.1-agoo.so:system/priv-app/RomUpdater/lib/arm/libtnet-2.0.17.1-agoo.so
 
+# PowerSaving Script
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuild/power_save:system/etc/init.d/power_save
+
 # Recovery
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     $(LOCAL_PATH)/bacon
