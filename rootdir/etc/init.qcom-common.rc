@@ -1,5 +1,6 @@
 #
 # Copyright 2014 The CyanogenMod Project
+# Copyright 2015 The SudaMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -318,6 +319,9 @@ service rmt_storage /system/bin/rmt_storage
     class core
     user root
     group system
+
+on property:ro.boot.emmc=true
+    start rmt_storage
 
 service rfs_access /system/bin/rfs_access
     class core
