@@ -49,6 +49,8 @@ TARGET_INIT_VENDOR_LIB := libinit_bacon
 
 TARGET_WCNSS_MAC_PREFIX := e8bba8
 
+USE_NEW_ROM_STYLE := true
+
 #WITH_LZMA_OTA := true
 
 # Workaround for factory issue
