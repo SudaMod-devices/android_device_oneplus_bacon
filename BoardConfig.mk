@@ -14,6 +14,8 @@
 # limitations under the License.
 #
 
+SM_TOOLCHAIN_VARIANT := uber
+
 # Inherit from MSM8974 common
 -include device/oppo/msm8974-common/BoardConfigCommon.mk
 
