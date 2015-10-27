@@ -51,7 +51,7 @@ TARGET_WCNSS_MAC_PREFIX := e8bba8
 
 USE_NEW_ROM_STYLE := true
 
-#WITH_LZMA_OTA := true
+WITH_LZMA_OTA := true
 
 # Workaround for factory issue
 BOARD_VOLD_CRYPTFS_MIGRATE := true
