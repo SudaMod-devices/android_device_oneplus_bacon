@@ -42,6 +42,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
     $(LOCAL_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml
 
+# RomUpdater
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuild/RomUpdater/RomUpdater.apk:system/priv-app/RomUpdater/RomUpdater.apk \
+    $(LOCAL_PATH)/prebuild/RomUpdater/lib/arm/libcocklogic.so:system/priv-app/RomUpdater/lib/arm/libcocklogic.so \
+    $(LOCAL_PATH)/prebuild/RomUpdater/lib/arm/libtnet-2.0.17.1-agoo.so:system/priv-app/RomUpdater/lib/arm/libtnet-2.0.17.1-agoo.so
+
 # NFC packages
 PRODUCT_PACKAGES += \
     NfcNci \
