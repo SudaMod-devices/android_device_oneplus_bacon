@@ -33,7 +33,6 @@ PRODUCT_PACKAGES += \
     libinit_bacon \
     fstab.bacon \
     init.bacon.rc \
-    init.qcom-common.rc \
     init.qcom.power.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
@@ -75,19 +74,26 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     mm.enable.smoothstreaming=true \
-    mm.enable.qcom_parser=3310129 \
     ro.qc.sdk.audio.fluencetype=fluence \
     persist.audio.fluence.voicecall=true \
     audio.offload.buffer.size.kb=32 \
-    av.offload.enable=true \
+    audio.offload.video=true \
     av.streaming.offload.enable=true \
     use.voice.path.for.pcm.voip=true \
     audio.offload.multiple.enabled=false \
     audio.offload.gapless.enabled=true \
-    tunnel.audio.encode=true \
     media.aac_51_output_enabled=true \
-    audio.offload.pcm.16bit.enable=true \
-    audio.offload.pcm.24bit.enable=true
+    audio.offload.pcm.16bit.enable=false \
+    audio.offload.pcm.24bit.enable=true \
+    audio.deep_buffer.media=true
+
+# Reduce client buffer size for fast audio output tracks
+PRODUCT_PROPERTY_OVERRIDES += \
+    af.fast_track_multiplier=1
+
+# Low latency audio buffer size in frames
+PRODUCT_PROPERTY_OVERRIDES += \
+    audio_hal.period_size=192
 
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES +=
@@ -106,8 +112,16 @@ PRODUCT_PACKAGES += \
     charger_res_images
 
 # Dalvik/HWUI
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.heapminfree=2m
+
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
+
+# Data
+PRODUCT_PACKAGES += \
+    librmnetctl \
+    rmnetcli
 
 # Display
 PRODUCT_AAPT_CONFIG := normal
@@ -159,25 +173,21 @@ PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
     $(LOCAL_PATH)/configs/media_codecs.xml:system/etc/media_codecs.xml \
+    $(LOCAL_PATH)/configs/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
     $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
 
 # Media
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
     libdivxdrmdecrypt \
-    libdashplayer \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
     libOmxEvrcEnc \
     libOmxQcelp13Enc \
     libOmxVdec \
-    libOmxVdecHevc \
     libOmxVenc \
-    libstagefrighthw \
-    qcmediaplayer
-
-PRODUCT_BOOT_JARS += qcmediaplayer
+    libstagefrighthw
 
 # NFC
 ifeq ($(TARGET_BUILD_VARIANT),user)
@@ -199,10 +209,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
 
 # RomUpdater
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuild/RomUpdater/RomUpdater.apk:system/priv-app/RomUpdater/RomUpdater.apk \
-    $(LOCAL_PATH)/prebuild/RomUpdater/lib/arm/libcocklogic.so:system/priv-app/RomUpdater/lib/arm/libcocklogic.so \
-    $(LOCAL_PATH)/prebuild/RomUpdater/lib/arm/libtnet-2.0.17.1-agoo.so:system/priv-app/RomUpdater/lib/arm/libtnet-2.0.17.1-agoo.so
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/prebuild/RomUpdater/RomUpdater.apk:system/priv-app/RomUpdater/RomUpdater.apk \
+#    $(LOCAL_PATH)/prebuild/RomUpdater/lib/arm/libcocklogic.so:system/priv-app/RomUpdater/lib/arm/libcocklogic.so \
+#    $(LOCAL_PATH)/prebuild/RomUpdater/lib/arm/libtnet-2.0.17.1-agoo.so:system/priv-app/RomUpdater/lib/arm/libtnet-2.0.17.1-agoo.so
 
 # PowerSaving Script
 #PRODUCT_COPY_FILES += \
@@ -218,6 +228,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
     frameworks/native/data/etc/android.hardware.ethernet.xml:system/etc/permissions/android.hardware.ethernet.xml \
     frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
+    frameworks/native/data/etc/android.software.midi.xml:system/etc/permissions/android.software.midi.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
     frameworks/base/nfc-extras/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
@@ -239,11 +250,6 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     power.msm8974
-
-# Proprietary wifi display, if available
-ifneq ($(QCPATH),)
-PRODUCT_BOOT_JARS += WfdCommon
-endif
 
 # Recovery
 PRODUCT_EXTRA_RECOVERY_KEYS += \
@@ -302,8 +308,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.mdpcomp.enable=true \
     persist.timed.enable=true \
     ro.opengles.version=196608 \
-    ro.qualcomm.bt.hci_transport=smd \
-    ro.telephony.default_network=9 \
     ro.use_data_netmgrd=true \
     persist.data.netmgrd.qos.enable=true \
     persist.data.tcpackprio.enable=true \

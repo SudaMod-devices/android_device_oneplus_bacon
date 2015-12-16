@@ -58,8 +58,7 @@
             4 - Voice Search
             5 - In-app Search
          This needs to match the constants in
-         policy/src/com/android/internal/policy/impl/PhoneWindowManager.java
-    -->
+         policy/src/com/android/internal/policy/impl/PhoneWindowManager.java -->
     <integer name="config_longPressOnHomeBehavior">3</integer>
 
     <integer name="config_longPressOnMenuBehavior">2</integer>
@@ -72,8 +71,7 @@
             4 - Voice Search
             5 - In-app Search
          This needs to match the constants in
-         policy/src/com/android/internal/policy/impl/PhoneWindowManager.java
-    -->
+         policy/src/com/android/internal/policy/impl/PhoneWindowManager.java -->
     <integer name="config_doubleTapOnHomeBehavior">0</integer>
 
     <!-- If this is true, the screen will fade off. -->
@@ -104,7 +102,7 @@
     <string-array translatable="false" name="networkAttributes">
         <item>"wifi,1,1,1,-1,true"</item>
         <item>"mobile,0,0,0,-1,true"</item>
-        <item>"mobile_mms,2,0,2,60000,true"</item>
+        <item>"mobile_mms,2,0,4,60000,true"</item>
         <item>"mobile_supl,3,0,2,60000,true"</item>
         <item>"mobile_dun,4,0,2,60000,true"</item>
         <item>"mobile_hipri,5,0,3,60000,true"</item>
@@ -193,8 +191,9 @@
     -->
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
 
-    <!-- bool value to for enabling motion accelerometer -->
+    <!-- bool value to for enabling motion accelerometer
     <bool name="use_motion_accel">false</bool>
+    -->
 
     <!-- Enable overlay for all location components. -->
     <bool name="config_enableNetworkLocationOverlay" translatable="false">false</bool>
@@ -220,10 +219,6 @@
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
     <bool name="config_automatic_brightness_available">true</bool>
 
-    <!-- Performance profiles -->
-    <string name="config_perf_profile_prop">powerhal</string>
-    <string name="config_perf_profile_default_entry">1</string>
-
     <!-- Setting this true forces the headset jack switches to use the/dev/input/event subsystem
          rather than the uevent framework. -->
     <bool name="config_useDevInputEventForAudioJack">true</bool>
@@ -246,20 +241,10 @@
     <!-- Flag specifying whether VoLTE & VT is availasble on device -->
     <bool name="config_device_volte_available">false</bool>
 
-    <!-- Enable the option to check proximity sensor when deciding whether to
-         turn the screen on
-         NOTE ! - Enable for devices that have a fast response proximity sensor -->
-    <bool name="config_proximityCheckOnWake">true</bool>
-    <integer name="config_proximityCheckTimeout">100</integer>
-    <bool name="config_proximityCheckOnWakeEnabledByDefault">true</bool>
-
     <!--  Maximum number of supported users -->
     <integer name="config_multiuserMaximumUsers">4</integer>
     <!--  Whether Multiuser UI should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
-
-    <!-- Ambient lux at which to enable outdoor mode when LiveDisplay is enabled -->
-    <integer name="config_outdoorAmbientLux">12000</integer>
 
     <!-- Array of light sensor LUX values to define our levels for auto backlight brightness support.
          The N entries of this array define N  1 zones as follows:
@@ -381,5 +366,34 @@
     <integer name="config_screenBrightnessDoze">5</integer>
     <bool name="config_dozeAfterScreenOff">true</bool>
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
+<<<<<<< HEAD
     <bool name="config_dozeUseAccelerometer">true</bool>
+=======
+
+    <!-- Whether device supports double tap to wake -->
+    <bool name="config_supportDoubleTapWake">true</bool>
+
+    <string-array name="config_mobile_tcp_buffers">
+        <item>"lte:2097152,4194304,8388608,262144,524288,1048576"</item>
+        <item>"lte_ca:2097152,4194304,8388608,262144,524288,1048576"</item>
+        <item>"umts:4094,87380,1220608,4096,16384,1220608"</item>
+        <item>"hspa:4094,87380,1220608,4096,16384,1220608"</item>
+        <item>"hsupa:4094,87380,1220608,4096,16384,1220608"</item>
+        <item>"hsdpa:4094,87380,2441216,4096,16384,2441216"</item>
+        <item>"hspap:4094,87380,1220608,4096,16384,1220608"</item>
+        <item>"edge:4093,26280,35040,4096,16384,35040"</item>
+        <item>"gprs:4092,8760,11680,4096,8760,11680"</item>
+        <item>"evdo:4094,87380,1048576,4096,16384,262144"</item>
+        <item>"ehrpd:4094,87380,1048576,4096,16384,262144"</item>
+    </string-array>
+
+    <!-- Enable doze powersaving -->
+    <bool name="config_enableAutoPowerModes">true</bool>
+
+    <!-- Our modem doesn't support this query yet -->
+    <string name="config_radio_access_family">GPRS|EDGE|UMTS|HSDPA|HSUPA|HSPA|LTE|HSPAP|GSM|TD_SCDMA|WCDMA|LTE_CA</string>
+
+    <!-- Operating volatage for bluetooth controller. 0 by default-->
+    <integer translatable="false" name="config_bluetooth_operating_voltage_mv">3700</integer>
+>>>>>>> 4cc515713b99045d8ce6c74fbb55696c7055030f
 </resources>
