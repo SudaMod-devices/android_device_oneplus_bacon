@@ -366,9 +366,6 @@
     <integer name="config_screenBrightnessDoze">5</integer>
     <bool name="config_dozeAfterScreenOff">true</bool>
     <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
-<<<<<<< HEAD
-    <bool name="config_dozeUseAccelerometer">true</bool>
-=======
 
     <!-- Whether device supports double tap to wake -->
     <bool name="config_supportDoubleTapWake">true</bool>
@@ -395,5 +392,4 @@
 
     <!-- Operating volatage for bluetooth controller. 0 by default-->
     <integer translatable="false" name="config_bluetooth_operating_voltage_mv">3700</integer>
->>>>>>> 4cc515713b99045d8ce6c74fbb55696c7055030f
 </resources>
