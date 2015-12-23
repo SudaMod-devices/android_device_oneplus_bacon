@@ -22,6 +22,9 @@ PLATFORM_PATH := device/oneplus/bacon
 # Include path
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 
+
+WITH_LZMA_OTA := true
+
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8974
 TARGET_NO_BOOTLOADER := true
