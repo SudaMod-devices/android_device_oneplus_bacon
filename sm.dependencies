@@ -7,9 +7,9 @@
   },
   {
     "remote": "suda",
-    "repository": "SudaMod-devices/android_kernel_oneplus_msm8974",
+    "repository": "CyanogenMod/android_kernel_oneplus_msm8974",
     "target_path": "kernel/oneplus/msm8974",
-    "revision": "sm-2.0"
+    "revision": "cm-13.0"
   },
   {
     "remote": "suda",
