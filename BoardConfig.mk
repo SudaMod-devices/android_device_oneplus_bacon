@@ -162,6 +162,9 @@ TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.bacon
 # RPC
 TARGET_NO_RPC := true
 
+# LZMA
+WITH_LZMA_OTA := true
+
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
 
