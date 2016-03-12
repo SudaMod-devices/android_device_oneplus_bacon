@@ -100,7 +100,7 @@ endif
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
 
-ANDROID_COMPILE_WITH_JACK := false
+#ANDROID_COMPILE_WITH_JACK := false
 
 # Flags for modem (we still have an old modem)
 COMMON_GLOBAL_CFLAGS += -DUSE_RIL_VERSION_10
