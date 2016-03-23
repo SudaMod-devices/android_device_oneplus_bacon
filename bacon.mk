@@ -163,10 +163,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
 
 # RomUpdater
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/prebuild/RomUpdater/RomUpdater.apk:system/priv-app/RomUpdater/RomUpdater.apk \
-#    $(LOCAL_PATH)/prebuild/RomUpdater/lib/arm/libcocklogic.so:system/priv-app/RomUpdater/lib/arm/libcocklogic.so \
-#    $(LOCAL_PATH)/prebuild/RomUpdater/lib/arm/libtnet-2.0.17.1-agoo.so:system/priv-app/RomUpdater/lib/arm/libtnet-2.0.17.1-agoo.so
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuild/RomUpdater/RomUpdater.apk:system/priv-app/RomUpdater/RomUpdater.apk \
+    $(LOCAL_PATH)/prebuild/RomUpdater/lib/arm/libcocklogic.so:system/priv-app/RomUpdater/lib/arm/libcocklogic.so \
+    $(LOCAL_PATH)/prebuild/RomUpdater/lib/arm/libtnet-2.0.17.1-agoo.so:system/priv-app/RomUpdater/lib/arm/libtnet-2.0.17.1-agoo.so
 
 # PowerSaving Script
 #PRODUCT_COPY_FILES += \
