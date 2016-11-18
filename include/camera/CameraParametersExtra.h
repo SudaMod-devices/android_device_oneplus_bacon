@@ -14,12 +14,10 @@
  * limitations under the License.
  */
 
-#ifndef DEVICE_PERMS_H
-#define DEVICE_PERMS_H
+#define CAMERA_PARAMETERS_EXTRA_C \
+const char CameraParameters::FOCUS_MODE_MANUAL_POSITION[] = "manual"; \
+const char CameraParameters::WHITE_BALANCE_MANUAL_CCT[] = "manual-cct";
 
-#define PROPERTY_PERMS_APPEND \
-    { "persist.audio.",   AID_SYSTEM,   0 }, \
-    { "persist.sys.camera.", AID_MEDIA, 0 }, \
-    { "camera.", AID_MEDIA, 0 }, \
-    { "sys.media.", AID_MEDIA, 0 },
-#endif /* DEVICE_PERMS_H */
+#define CAMERA_PARAMETERS_EXTRA_H \
+    static const char FOCUS_MODE_MANUAL_POSITION[]; \
+    static const char WHITE_BALANCE_MANUAL_CCT[];

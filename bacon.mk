@@ -67,6 +67,7 @@ TARGET_SCREEN_WIDTH := 1080
 # Camera
 PRODUCT_PACKAGES += \
     camera.bacon \
+    libshim_camera \
     Snap
 
 # Charger
@@ -235,6 +236,10 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine.conf:system/etc/thermal-engine-8974.conf
 
+# Widevine
+PRODUCT_PACKAGES += \
+    libshim_wvm
+
 # WiFi
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/WCNSS_cfg.dat:system/etc/firmware/wlan/prima/WCNSS_cfg.dat \
@@ -247,7 +252,6 @@ PRODUCT_PACKAGES += \
     wpa_supplicant
 
 PRODUCT_PACKAGES += \
-    dhcpcd.conf \
     hostapd_default.conf \
     hostapd.accept \
     hostapd.deny \

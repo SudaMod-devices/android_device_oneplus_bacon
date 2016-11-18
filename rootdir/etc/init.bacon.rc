@@ -22,10 +22,10 @@ on early-init
     write /sys/block/zram0/comp_algorithm lz4
 
 on init
+    export LD_SHIM_LIBS "/system/lib/hw/camera.vendor.bacon.so|/system/lib/libshim_camera.so:/system/vendor/lib/libwvm.so|libshim_wvm.so"
     # Set permissions for persist partition
     mkdir /persist 0771 system system
     mkdir /firmware 0771 system system
-    symlink /sdcard /mnt/sdcard
     symlink /sdcard /storage/sdcard0
 
     write /proc/sys/vm/page-cluster 0
@@ -275,9 +275,6 @@ on post-fs-data
     chown system camera /sys/class/leds/torch-light/brightness
     chmod 0660 /sys/class/leds/torch-light/brightness
 
-on property:init.svc.wpa_supplicant=stopped
-    stop dhcpcd
-
 service rmt_storage /system/bin/rmt_storage
     class core
     user root
@@ -347,64 +344,6 @@ service wpa_supplicant /system/bin/wpa_supplicant \
     disabled
     oneshot
 
-service dhcpcd_wlan0 /system/bin/dhcpcd -aABDKL
-    class late_start
-    disabled
-    oneshot
-
-service dhcpcd_p2p /system/bin/dhcpcd -aABKL
-    class late_start
-    disabled
-    oneshot
-
-service iprenew_wlan0 /system/bin/dhcpcd -n
-    class late_start
-    disabled
-    oneshot
-
-service iprenew_p2p /system/bin/dhcpcd -n
-    class late_start
-    disabled
-    oneshot
-
-service dhcpcd_eth0 /system/bin/dhcpcd -aABDKL
-    class late_start
-    disabled
-    oneshot
-
-service iprenew_eth0 /system/bin/dhcpcd -n
-    class late_start
-    disabled
-    oneshot
-
-service dhcpcd_bnep0 /system/bin/dhcpcd -BKLG
-    disabled
-    oneshot
-
-service dhcpcd_bnep1 /system/bin/dhcpcd -BKLG
-    disabled
-    oneshot
-
-service dhcpcd_bnep2 /system/bin/dhcpcd -BKLG
-    disabled
-    oneshot
-
-service dhcpcd_bnep3 /system/bin/dhcpcd -BKLG
-    disabled
-    oneshot
-
-service dhcpcd_bnep4 /system/bin/dhcpcd -BKLG
-    disabled
-    oneshot
-
-service dhcpcd_bt-pan /system/bin/dhcpcd -BKLG
-    disabled
-    oneshot
-
-service iprenew_bt-pan /system/bin/dhcpcd -n
-    disabled
-    oneshot
-
 service loc_launcher /system/bin/loc_launcher
     #loc_launcher will start as root and set its uid to gps
     class late_start
@@ -450,7 +389,7 @@ service qcamerasvr /system/bin/mm-qcamera-daemon
 service mpdecision /system/bin/mpdecision --avg_comp
    class main
    user root
-   group system
+   group root readproc
    disabled
 
 service thermal-engine /system/vendor/bin/thermal-engine
@@ -468,35 +407,20 @@ service time_daemon /system/bin/time_daemon
 
 on property:vold.decrypt=trigger_restart_framework
     start config_bt_addr
-    start config_bluetooth
     start wcnss-service
 
 service config_bt_addr /system/bin/btnvtool -O
     class core
     user bluetooth
     group bluetooth radio
-    oneshot
-
-service config_bluetooth /system/bin/sh /system/etc/init.qcom.bt.sh "onboot"
-    class core
-    user root
-    group bluetooth net_bt_admin qcom_diag diag radio
-    oneshot
 
 service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
     class late_start
     user bluetooth
     group bluetooth net_bt_admin qcom_diag diag radio
+    seclabel u:r:bluetooth_loader:s0
     disabled
     oneshot
-
-service cnd /system/bin/cnd
-    class late_start
-    socket cnd stream 660 root inet
-
-service dpmd /system/bin/dpmd
-    class late_start
-    socket dpmd stream 660 root system
 
 on property:bluetooth.hciattach=true
     start hciattach
