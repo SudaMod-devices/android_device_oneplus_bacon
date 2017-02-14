@@ -12,8 +12,8 @@
     "revision": "test"
   }
   {
-    "remote": "suda",
-    "repository": "SudaMod-devices/linaro-arm-eabi-6.0-cortex-a15",
+    "remote": "bitbucket",
+    "repository": "big_bum/linaro-arm-eabi-6.0-cortex-a15",
     "target_path": "prebuilts/gcc/linux-x86/arm/linaro-arm-eabi-6.0-cortex-a15",
     "revision": "master"
   }
