@@ -1,4 +1,3 @@
-# Copyright (C) 2015 The SudaMod Project
 # Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +23,7 @@ $(call inherit-product, vendor/sm/config/common_full_phone.mk)
 
 PRODUCT_NAME := sm_bacon
 PRODUCT_DEVICE := bacon
-PRODUCT_MANUFACTURER := ONEPLUS
+PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_MODEL := A0001
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
@@ -34,6 +33,9 @@ TARGET_VENDOR := oneplus
 TARGET_VENDOR_PRODUCT_NAME := bacon
 TARGET_VENDOR_DEVICE_NAME := A0001
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=A0001 PRODUCT_NAME=bacon
+
+## USE V4A
+WITH_V4A := true
 
 ## Use the latest approved GMS identifiers unless running a signed build
 ifneq ($(SIGN_BUILD),true)

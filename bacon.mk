@@ -87,8 +87,8 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Gello
-#PRODUCT_PACKAGES += \
-#    Gello
+PRODUCT_PACKAGES += \
+    Gello
 
 # Graphics
 PRODUCT_PACKAGES += \
@@ -172,16 +172,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     $(LOCAL_PATH)/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf
 
-# RomUpdater
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuild/RomUpdater/RomUpdater.apk:system/priv-app/RomUpdater/RomUpdater.apk \
-    $(LOCAL_PATH)/prebuild/RomUpdater/lib/arm/libcocklogic.so:system/priv-app/RomUpdater/lib/arm/libcocklogic.so \
-    $(LOCAL_PATH)/prebuild/RomUpdater/lib/arm/libtnet-2.0.17.1-agoo.so:system/priv-app/RomUpdater/lib/arm/libtnet-2.0.17.1-agoo.so
-
-# PowerSaving Script
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/prebuild/power_save:system/etc/init.d/power_save
-
 # Permissions
 PRODUCT_COPY_FILES += \
     external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml \
@@ -223,7 +213,8 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.recovery.bacon.rc \
     libinit_bacon \
-    ueventd.bacon.rc
+    ueventd.bacon.rc \
+    busybox
 
 PRODUCT_PACKAGES += \
     init.qcom.bt.sh

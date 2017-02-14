@@ -50,9 +50,11 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x02000000 --tags_offset 0x01e00000
 BOARD_DTBTOOL_ARGS := -2
 TARGET_KERNEL_ARCH := arm
-TARGET_KERNEL_CONFIG := lineageos_bacon_defconfig
-TARGET_KERNEL_SOURCE := kernel/oneplus/msm8974
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
+TARGET_KERNEL_CONFIG := wuyi_bacon_defconfig
+TARGET_KERNEL_SOURCE := kernel/oneplus/wuyi_msm8974
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/linaro-arm-eabi-6.0-cortex-a15/bin
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-eabi-
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
@@ -99,8 +101,6 @@ endif
 
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
-
-#ANDROID_COMPILE_WITH_JACK := false
 
 # Flags for modem (we still have an old modem)
 BOARD_GLOBAL_CFLAGS += -DUSE_RIL_VERSION_10
@@ -161,9 +161,6 @@ TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.bacon
 
 # RPC
 TARGET_NO_RPC := true
-
-# LZMA
-WITH_LZMA_OTA := true
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk

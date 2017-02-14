@@ -1,6 +1,4 @@
 #
-# Copyright (C) 2014 The CyanogenMod Project
-# Copyright (C) 2015 The SudaMod Project
 # Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
