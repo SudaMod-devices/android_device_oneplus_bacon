@@ -762,8 +762,8 @@
 
     <path name="speaker">
         <path name="spk" />
-        <ctl name="RX3 Digital Volume" value="90" />
-        <ctl name="RX4 Digital Volume" value="90" />
+        <ctl name="RX3 Digital Volume" value="80" />
+        <ctl name="RX4 Digital Volume" value="80" />
     </path>
 
     <path name="voice-speaker">
@@ -774,8 +774,8 @@
 
     <path name="headphones">
         <path name="hph" />
-        <ctl name="RX1 Digital Volume" value="90" />
-        <ctl name="RX2 Digital Volume" value="90" />
+        <ctl name="RX1 Digital Volume" value="84" />
+        <ctl name="RX2 Digital Volume" value="84" />
     </path>
 
     <path name="line">
@@ -784,8 +784,8 @@
 
     <path name="voice-headphones">
         <path name="hph" />
-        <ctl name="RX1 Digital Volume" value="90" />
-        <ctl name="RX2 Digital Volume" value="90" />
+        <ctl name="RX1 Digital Volume" value="85" />
+        <ctl name="RX2 Digital Volume" value="85" />
     </path>
 
     <path name="voice-line">
@@ -794,10 +794,10 @@
 
     <path name="speaker-and-headphones">
         <path name="spk-hph" />
-        <ctl name="RX1 Digital Volume" value="90" />
-        <ctl name="RX2 Digital Volume" value="90" />
-        <ctl name="RX3 Digital Volume" value="90" />
-        <ctl name="RX4 Digital Volume" value="90" />
+        <ctl name="RX1 Digital Volume" value="84" />
+        <ctl name="RX2 Digital Volume" value="84" />
+        <ctl name="RX3 Digital Volume" value="80" />
+        <ctl name="RX4 Digital Volume" value="80" />
     </path>
 
     <path name="speaker-and-line">
