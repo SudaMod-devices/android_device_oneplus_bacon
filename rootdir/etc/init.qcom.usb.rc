@@ -180,7 +180,6 @@ on property:sys.usb.config=mtp,mass_storage,adb
     start adbd
     setprop sys.usb.state ${sys.usb.config}
 
-#add a config for support rndis, diag and adb, added by Xinhua.Song 2014-05-10 
 on property:sys.usb.config=rndis,diag,adb
     stop adbd
     write /sys/class/android_usb/android0/enable 0
@@ -213,7 +212,6 @@ on property:sys.usb.config=midi,adb
     start adbd
     setprop sys.usb.state ${sys.usb.config}
 
-#add a config for default case by Xinhua.Song 2014-05-10
 on property:sys.usb.config=diag,serial_smd,serial_tty,rmnet_bam,mass_storage,adb
     write /sys/class/android_usb/android0/enable 0
     write /sys/class/android_usb/android0/iSerial 0123456789ABCDEF
